@@ -1,0 +1,36 @@
+nlp_mamba_rag_project/
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── embeddings/
+│
+├── models/
+│   ├── mamba_model.py
+│   └── rag_model.py
+│
+├── utils/
+│   ├── data_processing.py
+│   ├── tokenizer.py
+│   └── evaluation.py
+│
+├── config/
+│   └── config.yaml
+│
+├── scripts/
+│   ├── preprocess_data.py
+│   ├── train_model.py
+│   └── evaluate_model.py
+│
+├── notebooks/
+│   ├── data_exploration.ipynb
+│   └── model_analysis.ipynb
+│
+├── tests/
+│   ├── test_data_processing.py
+│   ├── test_model.py
+│   └── test_evaluation.py
+│
+├── requirements.txt
+├── README.md
+└── main.py
