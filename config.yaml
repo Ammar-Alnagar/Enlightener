@@ -1,0 +1,24 @@
+data:
+  raw_path: "data/raw/dataset.csv"
+  processed_path: "data/processed/"
+  embeddings_path: "data/embeddings/"
+
+model:
+  mamba:
+    vocab_size: 30000
+    d_model: 512
+    n_layers: 6
+  rag:
+    model_name: "facebook/rag-sequence-nq"
+
+training:
+  batch_size: 32
+  epochs: 10
+  learning_rate: 1e-4
+  
+evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1
