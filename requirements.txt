@@ -6,3 +6,4 @@ numpy==1.21.2
 state-space==0.1.0  # Replace with the actual Mamba library when available
 faiss-cpu==1.7.1
 pyyaml==5.4.1
+llama-cpp-python
