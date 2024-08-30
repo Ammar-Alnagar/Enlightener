@@ -1,15 +1,14 @@
  
 ---
 
-# Enlighter 🌟
+# Enlightener 🌟
 
-![Enlighter Logo](docs/images/enlighter_logo.png)
 
-Welcome to **Enlighter**, the cutting-edge Retrieval-Augmented Generation (RAG) system that transforms how queries are answered by combining the prowess of SSM models (Mamba) with the sophisticated GGUF Mamba models. Dive into a world where your questions meet their perfect answers with the power of advanced NLP technology.
+Welcome to Enlightener, the cutting-edge Retrieval-Augmented Generation (RAG) system that transforms how queries are answered by combining the prowess of SSM models (Mamba) with the sophisticated GGUF Mamba models. Dive into a world where your questions meet their perfect answers with the power of advanced NLP technology.
 
 ## 🏗️ Project Structure
 
-Explore the Enlighter ecosystem through its organized project structure:
+Explore the Enlightener ecosystem through its organized project structure:
 
 ```
 nlp_mamba_rag_project/
@@ -52,12 +51,12 @@ nlp_mamba_rag_project/
 
 ## 🚀 Getting Started
 
-Ready to unleash the power of Enlighter? Follow these steps:
+Ready to unleash the power of Enlightener? Follow these steps:
 
 1. **Clone the Repository:**
     ```bash
-    git clone https://github.com/yourusername/enlighter.git
-    cd enlighter
+    git clone https://github.com/yourusername/enlightener.git
+    cd enlightener
     ```
 
 2. **Install Dependencies:**
@@ -94,7 +93,7 @@ python scripts/evaluate_model.py
 
 ### Running the Application
 
-Engage the Enlighter experience:
+Engage the Enlightener experience:
 ```bash
 python main.py
 ```
@@ -114,7 +113,7 @@ pytest
 
 ## 🤝 Contributing
 
-We welcome contributions to the Enlighter universe. Please adhere to our coding standards and guidelines, and feel free to open issues or submit pull requests!
+We welcome contributions to the Enlightener universe. Please adhere to our coding standards and guidelines, and feel free to open issues or submit pull requests!
 
 ## 📜 License
 
