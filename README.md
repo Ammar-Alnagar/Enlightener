@@ -11,7 +11,7 @@ Welcome to Enlightener, the cutting-edge Retrieval-Augmented Generation (RAG) sy
 Explore the Enlightener ecosystem through its organized project structure:
 
 ```
-nlp_mamba_rag_project/
+Enlightener/
 │
 ├── data/
 │   ├── raw/              # Freshly harvested data
