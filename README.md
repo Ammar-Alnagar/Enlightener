@@ -11,43 +11,7 @@ Welcome to Enlightener, the cutting-edge Retrieval-Augmented Generation (RAG) sy
 Explore the Enlightener ecosystem through its organized project structure:
 
 ```
-Enlightener/
-│
-├── data/
-│   ├── raw/              # Freshly harvested data
-│   ├── processed/        # Refined and ready-to-use data
-│   └── embeddings/       # Your data's neural fingerprints
-│
-├── models/
-│   ├── mamba_model.py    # The heart of the Mamba model
-│   └── rag_model.py      # The brain behind RAG responses
-│
-├── utils/
-│   ├── data_processing.py # Where data meets magic
-│   ├── tokenizer.py      # Breaking down text into bites
-│   └── evaluation.py     # Measuring the magic's impact
-│
-├── config/
-│   └── config.yaml       # Your project's personal settings
-│
-├── scripts/
-│   ├── preprocess_data.py # Turning raw data into gold
-│   ├── train_model.py     # Training your model to brilliance
-│   └── evaluate_model.py  # Checking if your model shines
-│
-├── notebooks/
-│   ├── data_exploration.ipynb # Unveiling data mysteries
-│   └── model_analysis.ipynb   # Analyzing your model's genius
-│
-├── tests/
-│   ├── test_data_processing.py # Ensuring data magic works
-│   ├── test_model.py           # Validating model wizardry
-│   └── test_evaluation.py      # Measuring evaluation spells
-│
-├── requirements.txt           # Spells and potions needed
-├── README.md                  # Your guide to the Enlighter universe
-└── main.py                    # Your gateway to the magic
-```
+
 
 ## 🚀 Getting Started
 
