@@ -13,6 +13,8 @@ class GGUFModel:
         output = self.model(prompt, max_tokens=max_tokens)
         return output['choices'][0]['text']
 
+
+
 # src/utils.py
 def determine_model_type(model_path: str) -> str:
     if model_path.endswith('.gguf'):
@@ -21,6 +23,8 @@ def determine_model_type(model_path: str) -> str:
         return 'mamba'
     else:
         return 'transformer'
+
+
 
 # Update src/mamba_model.py
 # (No changes needed if it's already implemented as shown earlier)
