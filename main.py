@@ -21,6 +21,8 @@ def main():
     # Initialize retriever
     retriever = Retriever(embeddings)
 
+
+
     # Initialize generator
     generator = Generator(config)
 
@@ -35,6 +37,8 @@ def main():
     # Generate response
     prompt = f"Query: {query}\nRelevant information: {' '.join(relevant_docs)}\nAnswer:"
     response = generator.generate(prompt)
+
+
 
     print(f"Query: {query}")
     print(f"Response: {response}")
