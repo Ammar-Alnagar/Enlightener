@@ -106,6 +106,6 @@ if __name__ == "__main__":
 
 # configs/config.yaml
 data_path: 'data/processed/corpus.csv'
-model_name: 'state-spaces/mamba-2.8b'  # or path to GGUF model
+model_name: 'state-spaces/mamba-1.4b'  # or path to GGUF model
 generator_model: 'gpt2'  # or path to GGUF model
 
