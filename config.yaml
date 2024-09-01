@@ -6,15 +6,15 @@ data:
 model:
   mamba:
     vocab_size: 30000
-    d_model: 512
+    d_model: 1024
     n_layers: 6
   rag:
-    model_name: "facebook/rag-sequence-nq"
+    model_name: "llama3.1"
 
 training:
   batch_size: 32
-  epochs: 10
-  learning_rate: 1e-4
+  epochs: 100
+  learning_rate: 5e-5
   
 evaluation:
   metrics:
