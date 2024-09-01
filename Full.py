@@ -9,7 +9,7 @@ class GGUFModel:
         # Use the model to encode the text and return the last hidden state
         return self.model.embed(text)
 
-    def generate(self, prompt: str, max_tokens: int = 100) -> str:
+    def generate(self, prompt: str, max_tokens: int = 1000) -> str:
         output = self.model(prompt, max_tokens=max_tokens)
         return output['choices'][0]['text']
 
@@ -43,7 +43,7 @@ class Generator:
             self.model = AutoModelForCausalLM.from_pretrained(config['generator_model'])
             self.tokenizer = AutoTokenizer.from_pretrained(config['generator_model'])
 
-    def generate(self, prompt: str, max_tokens: int = 100) -> str:
+    def generate(self, prompt: str, max_tokens: int = 1000) -> str:
         if isinstance(self.model, GGUFModel):
             return self.model.generate(prompt, max_tokens=max_tokens)
         else:
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     main()
 
 # configs/config.yaml
-data_path: 'data/processed/corpus.csv'
+data_path: 'data/processed/text'
 model_name: 'state-spaces/mamba-1.4b'  # or path to GGUF model
-generator_model: 'gpt2'  # or path to GGUF model
+generator_model: 'hermes3'  # or path to GGUF model
 
