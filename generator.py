@@ -11,3 +11,4 @@ class Generator:
         outputs = self.model.generate(**inputs, max_length=100)
         return self.tokenizer.decode(outputs[0], skip_special_tokens=True)
 
+
