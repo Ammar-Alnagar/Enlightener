@@ -6,7 +6,7 @@ class MambaModel:
         self.model = Mamba.from_pretrained(config['model_name'])
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.model.to(self.device)
-
+ 
 
     def encode(self, text: str) -> torch.Tensor:
         with torch.no_grad():
