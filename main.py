@@ -53,3 +53,4 @@ if __name__ == "__main__":
 data_path: 'data/processed/corpus.csv'
 model_name: 'state-spaces/mamba-2.8b'
 generator_model: 'gpt2'
+
