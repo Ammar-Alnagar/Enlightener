@@ -7,6 +7,7 @@ class MambaModel:
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.model.to(self.device)
 
+
     def encode(self, text: str) -> torch.Tensor:
         with torch.no_grad():
             inputs = self.model.tokenizer(text, return_tensors='pt').to(self.device)
