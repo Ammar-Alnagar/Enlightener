@@ -6,5 +6,5 @@ def load_and_preprocess_data(file_path: str) -> List[str]:
     
     # Implement your preprocessing steps here
     return df['text'].tolist()
-
+ 
  
