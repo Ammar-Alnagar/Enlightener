@@ -4,6 +4,7 @@ from src.mamba_model import MambaModel
 from src.retriever import Retriever
 from src.generator import Generator
 
+
 def main():
     # Load configuration
     with open('configs/config.yaml', 'r') as f:
