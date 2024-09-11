@@ -8,7 +8,7 @@ def main():
     d_model = 512
     n_layers = 6
     model = MambaModel(vocab_size, d_model, n_layers)
-    
+     
     # Load trained model weights
     model.load_state_dict(torch.load('models/trained_mamba_model.pth'))
     
