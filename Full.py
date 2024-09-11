@@ -15,7 +15,7 @@ class GGUFModel:
         output = self.model(prompt, max_tokens=max_tokens)
         return output['choices'][0]['text']
 
-
+ 
 
 
 # src/utils.py
