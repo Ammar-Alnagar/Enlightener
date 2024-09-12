@@ -23,7 +23,6 @@ def determine_model_type(model_path: str) -> str:
         return 'transformer'
 
 
-
 # Update src/mamba_model.py
 # (No changes needed if it's already implemented as shown earlier)
 
