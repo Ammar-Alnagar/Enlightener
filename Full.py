@@ -14,7 +14,6 @@ class GGUFModel:
         return output['choices'][0]['text']
 
 
-
 # src/utils.py
 def determine_model_type(model_path: str) -> str:
     if model_path.endswith('.gguf'):
