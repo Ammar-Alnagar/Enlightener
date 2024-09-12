@@ -1,7 +1,7 @@
 # src/gguf_model.py
 from llama_cpp import Llama
    
- 
+
 class GGUFModel:
     def __init__(self, model_path: str, n_ctx: int = 512, n_gpu_layers: int = 0):
         self.model = Llama(model_path=model_path, n_ctx=n_ctx, n_gpu_layers=n_gpu_layers)
