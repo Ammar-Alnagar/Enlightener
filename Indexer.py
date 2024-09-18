@@ -7,7 +7,7 @@ from langchain_community.embeddings import OllamaEmbeddings
 from langchain_community.vectorstores import Chroma
 
 # Load documents from a PDF file
-loader = DirectoryLoader("./2024/gemma2_local_rag", glob="**/*.pdf")
+loader = DirectoryLoader("Data", glob="**/*.pdf")
 
 print("pdf loaded loader")
 
