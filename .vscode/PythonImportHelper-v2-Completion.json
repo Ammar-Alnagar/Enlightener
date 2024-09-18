@@ -271,7 +271,7 @@
         "kind": 5,
         "importPath": "Mamba",
         "description": "Mamba",
-        "peekOfCode": "os.environ[\"MISTRAL_API_KEY\"] = os.getenv(\"MISTRAL_API_KEY\")\nllm = model = ChatMistralAI(model=\"open-codestral-mamba\")\n# Create prompt template\ntemplate = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer the user's question based strictly on the provided context. If the context does not contain the answer, you should ask clarifying questions to gather more information.\nMake sure to:\n1. Use only the provided context to generate the answer.\n2. Be concise and direct.\n3. If the context is insufficient, ask relevant follow-up questions instead of speculating.\n4. Only answer from the context.",
+        "peekOfCode": "os.environ[\"MISTRAL_API_KEY\"] = os.getenv(\"MISTRAL_API_KEY\")\nllm = model = ChatMistralAI(model=\"open-codestral-mamba\")\n# Create prompt template\ntemplate = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer user questions based strictly on the provided context. If the context is insufficient, ask clarifying questions to gather more information.\nGuidelines:\n1. Use only the provided context to generate answers.\n2. Be concise and direct.\n3. If the context is insufficient, ask relevant follow-up questions instead of speculating.\n4. Present answers in numbered steps when appropriate.",
         "detail": "Mamba",
         "documentation": {}
     },
@@ -280,7 +280,7 @@
         "kind": 5,
         "importPath": "Mamba",
         "description": "Mamba",
-        "peekOfCode": "llm = model = ChatMistralAI(model=\"open-codestral-mamba\")\n# Create prompt template\ntemplate = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer the user's question based strictly on the provided context. If the context does not contain the answer, you should ask clarifying questions to gather more information.\nMake sure to:\n1. Use only the provided context to generate the answer.\n2. Be concise and direct.\n3. If the context is insufficient, ask relevant follow-up questions instead of speculating.\n4. Only answer from the context.\nContext:",
+        "peekOfCode": "llm = model = ChatMistralAI(model=\"open-codestral-mamba\")\n# Create prompt template\ntemplate = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer user questions based strictly on the provided context. If the context is insufficient, ask clarifying questions to gather more information.\nGuidelines:\n1. Use only the provided context to generate answers.\n2. Be concise and direct.\n3. If the context is insufficient, ask relevant follow-up questions instead of speculating.\n4. Present answers in numbered steps when appropriate.\nWhen responding to a question, follow these steps:",
         "detail": "Mamba",
         "documentation": {}
     },
@@ -289,7 +289,7 @@
         "kind": 5,
         "importPath": "Mamba",
         "description": "Mamba",
-        "peekOfCode": "template = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer the user's question based strictly on the provided context. If the context does not contain the answer, you should ask clarifying questions to gather more information.\nMake sure to:\n1. Use only the provided context to generate the answer.\n2. Be concise and direct.\n3. If the context is insufficient, ask relevant follow-up questions instead of speculating.\n4. Only answer from the context.\nContext:\n{context}\nQuestion: {question}",
+        "peekOfCode": "template = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer user questions based strictly on the provided context. If the context is insufficient, ask clarifying questions to gather more information.\nGuidelines:\n1. Use only the provided context to generate answers.\n2. Be concise and direct.\n3. If the context is insufficient, ask relevant follow-up questions instead of speculating.\n4. Present answers in numbered steps when appropriate.\nWhen responding to a question, follow these steps:\n1. Analyze the Question\n   - Carefully read and comprehend the context and details.",
         "detail": "Mamba",
         "documentation": {}
     },
