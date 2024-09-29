@@ -5,9 +5,6 @@ from groq import Groq
 from langchain_groq import ChatGroq
 import os
 from dotenv import load_dotenv
-
- 
-
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema.runnable import RunnablePassthrough
 from langchain.schema.output_parser import StrOutputParser
@@ -24,9 +21,6 @@ retriever = db.as_retriever(
     search_type="similarity",
     search_kwargs= {"k": 5}
 )
-
-
-
 
 load_dotenv()
 os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API")
