@@ -28,7 +28,6 @@ retriever = db.as_retriever(
 
 
 
-
 load_dotenv()
 os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API")
 # local_llm = 'llama3.1'
