@@ -27,7 +27,6 @@ retriever = db.as_retriever(
 
 
 
-
 load_dotenv()
 os.environ["MISTRAL_API_KEY"] = os.getenv("MISTRAL_API_KEY")
 
