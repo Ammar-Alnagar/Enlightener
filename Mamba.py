@@ -8,7 +8,6 @@ from langchain.schema.output_parser import StrOutputParser
 from langchain_mistralai.chat_models import ChatMistralAI
 from langchain_core.prompts import ChatPromptTemplate
 
-
 # # Create embeddingsclear
 embeddings = OllamaEmbeddings(model="nomic-embed-text", show_progress=False)
 # embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
