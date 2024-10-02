@@ -24,15 +24,12 @@ retriever = db.as_retriever(
 
 
 
-
 load_dotenv()
 os.environ["MISTRAL_API_KEY"] = os.getenv("MISTRAL_API_KEY")
 
 
 llm = model = ChatMistralAI(model="open-codestral-mamba")
     
-
-
 # Create prompt template
 template = """
 You are an expert assistant specializing in the Mawared HR System. Your role is to answer user questions based strictly on the provided context. If the context is insufficient, ask clarifying questions to gather more information.
