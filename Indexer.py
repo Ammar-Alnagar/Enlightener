@@ -8,6 +8,7 @@ from langchain_community.vectorstores import Chroma
 
 
 
+
 # Load documents from a PDF file
 loader = DirectoryLoader("Data", glob="**/*.pdf")
 print("pdf loaded loader")
