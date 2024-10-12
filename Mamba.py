@@ -18,7 +18,7 @@ db = Chroma(persist_directory="./db-mawared",
 # Create retriever
 retriever = db.as_retriever(
     search_type="similarity",
-    search_kwargs= {"k": 5}
+    search_kwargs= {"k": 3}
 )
 
 
@@ -96,4 +96,4 @@ if __name__ == "__main__":
         if user_question.lower() == 'quit':
             break
         answer = ask_question(user_question)
-        # print("\nFull answer received.\n")
+        print("\nFull answer received.\n")
