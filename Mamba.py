@@ -8,12 +8,6 @@ from langchain.schema.output_parser import StrOutputParser
 from langchain_mistralai.chat_models import ChatMistralAI
 from langchain_core.prompts import ChatPromptTemplate
 
-
-
-
-
-
-
 # # Create embeddingsclear
 embeddings = OllamaEmbeddings(model="nomic-embed-text", show_progress=False)
 # embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
@@ -24,10 +18,8 @@ db = Chroma(persist_directory="./db-mawared",
 # Create retriever
 retriever = db.as_retriever(
     search_type="similarity",
-    search_kwargs= {"k": 5}
+    search_kwargs= {"k": 3}
 )
-
-
 
 
 
@@ -38,8 +30,6 @@ os.environ["MISTRAL_API_KEY"] = os.getenv("MISTRAL_API_KEY")
 
 llm = model = ChatMistralAI(model="open-codestral-mamba")
     
-
-
 # Create prompt template
 template = """
 You are an expert assistant specializing in the Mawared HR System. Your role is to answer user questions based strictly on the provided context. If the context is insufficient, ask clarifying questions to gather more information.
@@ -106,5 +96,4 @@ if __name__ == "__main__":
         if user_question.lower() == 'quit':
             break
         answer = ask_question(user_question)
-        # print("\nFull answer received.\n")
-
+        print("\nFull answer received.\n")

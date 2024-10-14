@@ -22,11 +22,6 @@ retriever = db.as_retriever(
     search_kwargs= {"k": 5}
 )
 
-
-
-
-
-
 load_dotenv()
 os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API")
 # local_llm = 'llama3.1'
@@ -88,4 +83,3 @@ if __name__ == "__main__":
             break
         answer = ask_question(user_question)
         # print("\nFull answer received.\n")
-
