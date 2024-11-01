@@ -3,7 +3,7 @@ from langchain_community.vectorstores.chroma import Chroma
 from langchain_groq import ChatGroq
 import os
 from dotenv import load_dotenv
-from langchain.prompts import ChatPromptTemplate
+from langchain.prompts import ChatPromptTemplatehi
 from langchain.schema.runnable import RunnablePassthrough
 from langchain.schema.output_parser import StrOutputParser
 from langchain.retrievers import ContextualCompressionRetriever
@@ -70,7 +70,7 @@ template = """
 الإجابة:
 """
 
-prompt = ChatPromptTemplate.from_template(template)
+prompt = ChatPromptTemplatehi.from_template(template)
 
 # Create the RAG chain
 rag_chain = (

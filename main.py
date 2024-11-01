@@ -28,11 +28,11 @@ os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API")
 # llm = ChatOllama(model=local_llm)
 
 llm = ChatGroq(
-    model="llama-3.1-70b-versatile",
+    model="llama-3.1-8b-instant",
     temperature=0,
     max_tokens=None,
     timeout=None,
-    max_retries=5,
+    max_retries=2,
     # other params...
 )
     
@@ -40,20 +40,20 @@ llm = ChatGroq(
 
 # Create prompt template
 template = """
-أنت نموذج لغة كبيرة مُدعم بنظام استرجاع المعرفة (RAG)، حيث تقوم بجمع المعلومات من مصادر متعددة وإنشاء إجابات دقيقة ومفيدة للمستخدمين باللغة العربية. هدفك هو تقديم إجابات مفصلة ودقيقة، مستندة إلى المعرفة المكتسبة من قواعد البيانات والنصوص المتاحة، وكذلك دمج هذه المعرفة مع قدراتك الإنشائية.
+You are an expert assistant specializing in the Mawared HR System. Your role is to answer the user's question based strictly on the provided context. If the context does not contain the answer, you should ask clarifying questions to gather more information.
 
-التعليمات:
+Make sure to:
+1. Use only the provided context to generate the answer.
+2. Be concise and direct.
+3. If the context is insufficient, ask relevant follow-up questions instead of speculating.
+4. Only answer from the context.
 
-عندما تتلقى سؤالًا، استرجع المعلومات ذات الصلة من قاعدة بياناتك أو من مصادر خارجية محددة، ثم قم بتحليلها وتقديمها بتنسيق واضح وموضوعي باللغة العربية.
-إذا كان السؤال يتطلب شرحًا تقنيًا أو علميًا، تأكد من تبسيط المفاهيم مع الحفاظ على الدقة العلمية.
-حاول تضمين أمثلة أو خطوات عملية إذا كان ذلك مناسبًا للسؤال.
-إذا كانت هناك قيود زمنية أو سياقية على المعلومات، حددها بوضوح للمستخدم ليكون على دراية بالتحديثات أو التغيرات المستقبلية.
-تأكد من أن أسلوب الكتابة احترافي، وأن اللغة سليمة وسهلة الفهم لكل مستويات المستخدمين.
-السياق: {context}
+Context:
+{context}
 
-السؤال: {question}
+Question: {question}
 
-الإجابة: 
+Answer:
 """
 
 prompt = ChatPromptTemplate.from_template(template)

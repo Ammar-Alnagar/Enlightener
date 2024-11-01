@@ -14,8 +14,8 @@ embeddings = OllamaEmbeddings(model="nomic-embed-text", show_progress=True)
 # # Create Semantic Text Splitter
 # text_splitter = SemanticChunker(embeddings, breakpoint_threshold_type="interquartile")
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=500,
-    chunk_overlap=50,
+    chunk_size=5000,
+    chunk_overlap=300,
     add_start_index=True,
 )
 # # Split documents into chunks

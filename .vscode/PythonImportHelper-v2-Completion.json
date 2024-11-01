@@ -24,6 +24,22 @@
         "documentation": {}
     },
     {
+        "label": "OllamaEmbeddings",
+        "importPath": "langchain_community.embeddings.ollama",
+        "description": "langchain_community.embeddings.ollama",
+        "isExtraImport": true,
+        "detail": "langchain_community.embeddings.ollama",
+        "documentation": {}
+    },
+    {
+        "label": "Chroma",
+        "importPath": "langchain_community.vectorstores.chroma",
+        "description": "langchain_community.vectorstores.chroma",
+        "isExtraImport": true,
+        "detail": "langchain_community.vectorstores.chroma",
+        "documentation": {}
+    },
+    {
         "label": "Chroma",
         "importPath": "langchain_community.vectorstores.chroma",
         "description": "langchain_community.vectorstores.chroma",
@@ -45,6 +61,31 @@
         "description": "langchain_community.vectorstores.chroma",
         "isExtraImport": true,
         "detail": "langchain_community.vectorstores.chroma",
+        "documentation": {}
+    },
+    {
+        "label": "ChatOllama",
+        "importPath": "langchain_community.chat_models.ollama",
+        "description": "langchain_community.chat_models.ollama",
+        "isExtraImport": true,
+        "detail": "langchain_community.chat_models.ollama",
+        "documentation": {}
+    },
+    {
+        "label": "ChatOllama",
+        "importPath": "langchain_community.chat_models.ollama",
+        "description": "langchain_community.chat_models.ollama",
+        "isExtraImport": true,
+        "detail": "langchain_community.chat_models.ollama",
+        "documentation": {}
+    },
+    {
+        "label": "google.generativeai",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "google.generativeai",
+        "description": "google.generativeai",
+        "detail": "google.generativeai",
         "documentation": {}
     },
     {
@@ -81,132 +122,11 @@
         "documentation": {}
     },
     {
-        "label": "ChatPromptTemplate",
-        "importPath": "langchain.prompts",
-        "description": "langchain.prompts",
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
         "isExtraImport": true,
-        "detail": "langchain.prompts",
-        "documentation": {}
-    },
-    {
-        "label": "ChatPromptTemplate",
-        "importPath": "langchain.prompts",
-        "description": "langchain.prompts",
-        "isExtraImport": true,
-        "detail": "langchain.prompts",
-        "documentation": {}
-    },
-    {
-        "label": "ChatPromptTemplate",
-        "importPath": "langchain.prompts",
-        "description": "langchain.prompts",
-        "isExtraImport": true,
-        "detail": "langchain.prompts",
-        "documentation": {}
-    },
-    {
-        "label": "RunnablePassthrough",
-        "importPath": "langchain.schema.runnable",
-        "description": "langchain.schema.runnable",
-        "isExtraImport": true,
-        "detail": "langchain.schema.runnable",
-        "documentation": {}
-    },
-    {
-        "label": "RunnablePassthrough",
-        "importPath": "langchain.schema.runnable",
-        "description": "langchain.schema.runnable",
-        "isExtraImport": true,
-        "detail": "langchain.schema.runnable",
-        "documentation": {}
-    },
-    {
-        "label": "RunnablePassthrough",
-        "importPath": "langchain.schema.runnable",
-        "description": "langchain.schema.runnable",
-        "isExtraImport": true,
-        "detail": "langchain.schema.runnable",
-        "documentation": {}
-    },
-    {
-        "label": "StrOutputParser",
-        "importPath": "langchain.schema.output_parser",
-        "description": "langchain.schema.output_parser",
-        "isExtraImport": true,
-        "detail": "langchain.schema.output_parser",
-        "documentation": {}
-    },
-    {
-        "label": "StrOutputParser",
-        "importPath": "langchain.schema.output_parser",
-        "description": "langchain.schema.output_parser",
-        "isExtraImport": true,
-        "detail": "langchain.schema.output_parser",
-        "documentation": {}
-    },
-    {
-        "label": "StrOutputParser",
-        "importPath": "langchain.schema.output_parser",
-        "description": "langchain.schema.output_parser",
-        "isExtraImport": true,
-        "detail": "langchain.schema.output_parser",
-        "documentation": {}
-    },
-    {
-        "label": "ChatMistralAI",
-        "importPath": "langchain_mistralai.chat_models",
-        "description": "langchain_mistralai.chat_models",
-        "isExtraImport": true,
-        "detail": "langchain_mistralai.chat_models",
-        "documentation": {}
-    },
-    {
-        "label": "ChatPromptTemplate",
-        "importPath": "langchain_core.prompts",
-        "description": "langchain_core.prompts",
-        "isExtraImport": true,
-        "detail": "langchain_core.prompts",
-        "documentation": {}
-    },
-    {
-        "label": "ChatOllama",
-        "importPath": "langchain_community.chat_models.ollama",
-        "description": "langchain_community.chat_models.ollama",
-        "isExtraImport": true,
-        "detail": "langchain_community.chat_models.ollama",
-        "documentation": {}
-    },
-    {
-        "label": "ChatOllama",
-        "importPath": "langchain_community.chat_models.ollama",
-        "description": "langchain_community.chat_models.ollama",
-        "isExtraImport": true,
-        "detail": "langchain_community.chat_models.ollama",
-        "documentation": {}
-    },
-    {
-        "label": "Groq",
-        "importPath": "groq",
-        "description": "groq",
-        "isExtraImport": true,
-        "detail": "groq",
-        "documentation": {}
-    },
-    {
-        "label": "ChatGroq",
-        "importPath": "langchain_groq",
-        "description": "langchain_groq",
-        "isExtraImport": true,
-        "detail": "langchain_groq",
-        "documentation": {}
-    },
-    {
-        "label": "google.generativeai",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "google.generativeai",
-        "description": "google.generativeai",
-        "detail": "google.generativeai",
+        "detail": "dotenv",
         "documentation": {}
     },
     {
@@ -215,6 +135,110 @@
         "description": "langchain_google_genai",
         "isExtraImport": true,
         "detail": "langchain_google_genai",
+        "documentation": {}
+    },
+    {
+        "label": "ChatPromptTemplate",
+        "importPath": "langchain.prompts",
+        "description": "langchain.prompts",
+        "isExtraImport": true,
+        "detail": "langchain.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "ChatPromptTemplate",
+        "importPath": "langchain.prompts",
+        "description": "langchain.prompts",
+        "isExtraImport": true,
+        "detail": "langchain.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "ChatPromptTemplate",
+        "importPath": "langchain.prompts",
+        "description": "langchain.prompts",
+        "isExtraImport": true,
+        "detail": "langchain.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "ChatPromptTemplatehi",
+        "importPath": "langchain.prompts",
+        "description": "langchain.prompts",
+        "isExtraImport": true,
+        "detail": "langchain.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "RunnablePassthrough",
+        "importPath": "langchain.schema.runnable",
+        "description": "langchain.schema.runnable",
+        "isExtraImport": true,
+        "detail": "langchain.schema.runnable",
+        "documentation": {}
+    },
+    {
+        "label": "RunnablePassthrough",
+        "importPath": "langchain.schema.runnable",
+        "description": "langchain.schema.runnable",
+        "isExtraImport": true,
+        "detail": "langchain.schema.runnable",
+        "documentation": {}
+    },
+    {
+        "label": "RunnablePassthrough",
+        "importPath": "langchain.schema.runnable",
+        "description": "langchain.schema.runnable",
+        "isExtraImport": true,
+        "detail": "langchain.schema.runnable",
+        "documentation": {}
+    },
+    {
+        "label": "RunnablePassthrough",
+        "importPath": "langchain.schema.runnable",
+        "description": "langchain.schema.runnable",
+        "isExtraImport": true,
+        "detail": "langchain.schema.runnable",
+        "documentation": {}
+    },
+    {
+        "label": "StrOutputParser",
+        "importPath": "langchain.schema.output_parser",
+        "description": "langchain.schema.output_parser",
+        "isExtraImport": true,
+        "detail": "langchain.schema.output_parser",
+        "documentation": {}
+    },
+    {
+        "label": "StrOutputParser",
+        "importPath": "langchain.schema.output_parser",
+        "description": "langchain.schema.output_parser",
+        "isExtraImport": true,
+        "detail": "langchain.schema.output_parser",
+        "documentation": {}
+    },
+    {
+        "label": "StrOutputParser",
+        "importPath": "langchain.schema.output_parser",
+        "description": "langchain.schema.output_parser",
+        "isExtraImport": true,
+        "detail": "langchain.schema.output_parser",
+        "documentation": {}
+    },
+    {
+        "label": "StrOutputParser",
+        "importPath": "langchain.schema.output_parser",
+        "description": "langchain.schema.output_parser",
+        "isExtraImport": true,
+        "detail": "langchain.schema.output_parser",
+        "documentation": {}
+    },
+    {
+        "label": "RecursiveCharacterTextSplitter",
+        "importPath": "langchain_text_splitters",
+        "description": "langchain_text_splitters",
+        "isExtraImport": true,
+        "detail": "langchain_text_splitters",
         "documentation": {}
     },
     {
@@ -234,7 +258,23 @@
         "documentation": {}
     },
     {
+        "label": "DirectoryLoader",
+        "importPath": "langchain_community.document_loaders",
+        "description": "langchain_community.document_loaders",
+        "isExtraImport": true,
+        "detail": "langchain_community.document_loaders",
+        "documentation": {}
+    },
+    {
         "label": "OllamaEmbeddings",
+        "importPath": "langchain_community.embeddings",
+        "description": "langchain_community.embeddings",
+        "isExtraImport": true,
+        "detail": "langchain_community.embeddings",
+        "documentation": {}
+    },
+    {
+        "label": "HuggingFaceEmbeddings",
         "importPath": "langchain_community.embeddings",
         "description": "langchain_community.embeddings",
         "isExtraImport": true,
@@ -250,165 +290,76 @@
         "documentation": {}
     },
     {
-        "label": "ask_question",
-        "kind": 2,
-        "importPath": "Mamba",
-        "description": "Mamba",
-        "peekOfCode": "def ask_question(question):\n    print(\"Answer:\\t\", end=\" \", flush=True)\n    for chunk in rag_chain.stream(question):\n        print(chunk, end=\"\", flush=True)\n    print(\"\\n\")\n# Example usage\nif __name__ == \"__main__\":\n    while True:\n        user_question = input(\"Ask a question (or type 'quit' to exit): \")\n        if user_question.lower() == 'quit':",
-        "detail": "Mamba",
+        "label": "Chroma",
+        "importPath": "langchain_community.vectorstores",
+        "description": "langchain_community.vectorstores",
+        "isExtraImport": true,
+        "detail": "langchain_community.vectorstores",
         "documentation": {}
     },
     {
-        "label": "embeddings",
-        "kind": 5,
-        "importPath": "Mamba",
-        "description": "Mamba",
-        "peekOfCode": "embeddings = OllamaEmbeddings(model=\"nomic-embed-text\", show_progress=False)\n# embeddings = HuggingFaceEmbeddings(model_name=\"sentence-transformers/all-MiniLM-L6-v2\")\ndb = Chroma(persist_directory=\"./db-mawared\",\n            embedding_function=embeddings)\n# Create retriever\nretriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs= {\"k\": 5}\n)\nload_dotenv()",
-        "detail": "Mamba",
+        "label": "ChatMistralAI",
+        "importPath": "langchain_mistralai.chat_models",
+        "description": "langchain_mistralai.chat_models",
+        "isExtraImport": true,
+        "detail": "langchain_mistralai.chat_models",
         "documentation": {}
     },
     {
-        "label": "db",
-        "kind": 5,
-        "importPath": "Mamba",
-        "description": "Mamba",
-        "peekOfCode": "db = Chroma(persist_directory=\"./db-mawared\",\n            embedding_function=embeddings)\n# Create retriever\nretriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs= {\"k\": 5}\n)\nload_dotenv()\nos.environ[\"MISTRAL_API_KEY\"] = os.getenv(\"MISTRAL_API_KEY\")\nllm = model = ChatMistralAI(model=\"open-codestral-mamba\")",
-        "detail": "Mamba",
+        "label": "ChatPromptTemplate",
+        "importPath": "langchain_core.prompts",
+        "description": "langchain_core.prompts",
+        "isExtraImport": true,
+        "detail": "langchain_core.prompts",
         "documentation": {}
     },
     {
-        "label": "retriever",
-        "kind": 5,
-        "importPath": "Mamba",
-        "description": "Mamba",
-        "peekOfCode": "retriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs= {\"k\": 5}\n)\nload_dotenv()\nos.environ[\"MISTRAL_API_KEY\"] = os.getenv(\"MISTRAL_API_KEY\")\nllm = model = ChatMistralAI(model=\"open-codestral-mamba\")\n# Create prompt template\ntemplate = \"\"\"",
-        "detail": "Mamba",
+        "label": "Groq",
+        "importPath": "groq",
+        "description": "groq",
+        "isExtraImport": true,
+        "detail": "groq",
         "documentation": {}
     },
     {
-        "label": "os.environ[\"MISTRAL_API_KEY\"]",
-        "kind": 5,
-        "importPath": "Mamba",
-        "description": "Mamba",
-        "peekOfCode": "os.environ[\"MISTRAL_API_KEY\"] = os.getenv(\"MISTRAL_API_KEY\")\nllm = model = ChatMistralAI(model=\"open-codestral-mamba\")\n# Create prompt template\ntemplate = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer user questions based strictly on the provided context. If the context is insufficient, ask clarifying questions to gather more information.\nGuidelines:\n1. Use only the provided context to generate answers.\n2. Be concise and direct.\n3. If the context is insufficient, ask relevant follow-up questions instead of speculating.\n4. Present answers in numbered steps when appropriate.",
-        "detail": "Mamba",
+        "label": "ChatGroq",
+        "importPath": "langchain_groq",
+        "description": "langchain_groq",
+        "isExtraImport": true,
+        "detail": "langchain_groq",
         "documentation": {}
     },
     {
-        "label": "llm",
-        "kind": 5,
-        "importPath": "Mamba",
-        "description": "Mamba",
-        "peekOfCode": "llm = model = ChatMistralAI(model=\"open-codestral-mamba\")\n# Create prompt template\ntemplate = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer user questions based strictly on the provided context. If the context is insufficient, ask clarifying questions to gather more information.\nGuidelines:\n1. Use only the provided context to generate answers.\n2. Be concise and direct.\n3. If the context is insufficient, ask relevant follow-up questions instead of speculating.\n4. Present answers in numbered steps when appropriate.\nWhen responding to a question, follow these steps:",
-        "detail": "Mamba",
+        "label": "ChatGroq",
+        "importPath": "langchain_groq",
+        "description": "langchain_groq",
+        "isExtraImport": true,
+        "detail": "langchain_groq",
         "documentation": {}
     },
     {
-        "label": "template",
-        "kind": 5,
-        "importPath": "Mamba",
-        "description": "Mamba",
-        "peekOfCode": "template = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer user questions based strictly on the provided context. If the context is insufficient, ask clarifying questions to gather more information.\nGuidelines:\n1. Use only the provided context to generate answers.\n2. Be concise and direct.\n3. If the context is insufficient, ask relevant follow-up questions instead of speculating.\n4. Present answers in numbered steps when appropriate.\nWhen responding to a question, follow these steps:\n1. Analyze the Question\n   - Carefully read and comprehend the context and details.",
-        "detail": "Mamba",
+        "label": "ContextualCompressionRetriever",
+        "importPath": "langchain.retrievers",
+        "description": "langchain.retrievers",
+        "isExtraImport": true,
+        "detail": "langchain.retrievers",
         "documentation": {}
     },
     {
-        "label": "prompt",
-        "kind": 5,
-        "importPath": "Mamba",
-        "description": "Mamba",
-        "peekOfCode": "prompt = ChatPromptTemplate.from_template(template)\n# Create the RAG chain using LCEL with prompt printing and streaming output\nrag_chain = (\n    {\"context\": retriever, \"question\": RunnablePassthrough()}\n    | prompt\n    | llm\n    | StrOutputParser()\n)\n# Function to ask questions\ndef ask_question(question):",
-        "detail": "Mamba",
+        "label": "LLMChainExtractor",
+        "importPath": "langchain.retrievers.document_compressors",
+        "description": "langchain.retrievers.document_compressors",
+        "isExtraImport": true,
+        "detail": "langchain.retrievers.document_compressors",
         "documentation": {}
     },
     {
-        "label": "rag_chain",
-        "kind": 5,
-        "importPath": "Mamba",
-        "description": "Mamba",
-        "peekOfCode": "rag_chain = (\n    {\"context\": retriever, \"question\": RunnablePassthrough()}\n    | prompt\n    | llm\n    | StrOutputParser()\n)\n# Function to ask questions\ndef ask_question(question):\n    print(\"Answer:\\t\", end=\" \", flush=True)\n    for chunk in rag_chain.stream(question):",
-        "detail": "Mamba",
-        "documentation": {}
-    },
-    {
-        "label": "ask_question",
-        "kind": 2,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "def ask_question(question):\n    print(\"Answer:\\t\", end=\" \", flush=True)\n    for chunk in rag_chain.stream(question):\n        print(chunk, end=\"\", flush=True)\n    print(\"\\n\")\n# Example usage\nif __name__ == \"__main__\":\n    while True:\n        user_question = input(\"Ask a question (or type 'quit' to exit): \")\n        if user_question.lower() == 'quit':",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "embeddings",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "embeddings = OllamaEmbeddings(model=\"nomic-embed-text\", show_progress=False)\n# embeddings = HuggingFaceEmbeddings(model_name=\"sentence-transformers/all-MiniLM-L6-v2\")\ndb = Chroma(persist_directory=\"./db-mawared\",\n            embedding_function=embeddings)\n# Create retriever\nretriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs= {\"k\": 5}\n)\nload_dotenv()",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "db = Chroma(persist_directory=\"./db-mawared\",\n            embedding_function=embeddings)\n# Create retriever\nretriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs= {\"k\": 5}\n)\nload_dotenv()\nos.environ[\"GROQ_API_KEY\"] = os.getenv(\"GROQ_API\")\n# local_llm = 'llama3.1'",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "retriever",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "retriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs= {\"k\": 5}\n)\nload_dotenv()\nos.environ[\"GROQ_API_KEY\"] = os.getenv(\"GROQ_API\")\n# local_llm = 'llama3.1'\n# llm = ChatOllama(model=local_llm)\nllm = ChatGroq(\n    model=\"llama-3.1-8b-instant\",",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "os.environ[\"GROQ_API_KEY\"]",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "os.environ[\"GROQ_API_KEY\"] = os.getenv(\"GROQ_API\")\n# local_llm = 'llama3.1'\n# llm = ChatOllama(model=local_llm)\nllm = ChatGroq(\n    model=\"llama-3.1-8b-instant\",\n    temperature=0,\n    max_tokens=None,\n    timeout=None,\n    max_retries=2,\n    # other params...",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "llm",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "llm = ChatGroq(\n    model=\"llama-3.1-8b-instant\",\n    temperature=0,\n    max_tokens=None,\n    timeout=None,\n    max_retries=2,\n    # other params...\n)\n# Create prompt template\ntemplate = \"\"\"",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "template",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "template = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer the user's question based strictly on the provided context. If the context does not contain the answer, you should ask clarifying questions to gather more information.\nMake sure to:\n1. Use only the provided context to generate the answer.\n2. Be concise and direct.\n3. If the context is insufficient, ask relevant follow-up questions instead of speculating.\n4. Only answer from the context.\nContext:\n{context}\nQuestion: {question}",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "prompt",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "prompt = ChatPromptTemplate.from_template(template)\n# Create the RAG chain using LCEL with prompt printing and streaming output\nrag_chain = (\n    {\"context\": retriever, \"question\": RunnablePassthrough()}\n    | prompt\n    | llm\n    | StrOutputParser()\n)\n# Function to ask questions\ndef ask_question(question):",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "rag_chain",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "rag_chain = (\n    {\"context\": retriever, \"question\": RunnablePassthrough()}\n    | prompt\n    | llm\n    | StrOutputParser()\n)\n# Function to ask questions\ndef ask_question(question):\n    print(\"Answer:\\t\", end=\" \", flush=True)\n    for chunk in rag_chain.stream(question):",
-        "detail": "main",
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
         "documentation": {}
     },
     {
@@ -535,6 +486,330 @@
         "description": "Indexer",
         "peekOfCode": "vectorstore = Chroma.from_documents(\n    documents=texts, \n    embedding= embeddings,\n    persist_directory=\"./db-mawared\")\nprint(\"vectorstore created\")",
         "detail": "Indexer",
+        "documentation": {}
+    },
+    {
+        "label": "ask_question",
+        "kind": 2,
+        "importPath": "Mamba",
+        "description": "Mamba",
+        "peekOfCode": "def ask_question(question):\n    print(\"Answer:\\t\", end=\" \", flush=True)\n    for chunk in rag_chain.stream(question):\n        print(chunk, end=\"\", flush=True)\n    print(\"\\n\")\n# Example usage\nif __name__ == \"__main__\":\n    while True:\n        user_question = input(\"Ask a question (or type 'quit' to exit): \")\n        if user_question.lower() == 'quit':",
+        "detail": "Mamba",
+        "documentation": {}
+    },
+    {
+        "label": "embeddings",
+        "kind": 5,
+        "importPath": "Mamba",
+        "description": "Mamba",
+        "peekOfCode": "embeddings = OllamaEmbeddings(model=\"nomic-embed-text\", show_progress=False)\n# embeddings = HuggingFaceEmbeddings(model_name=\"sentence-transformers/all-MiniLM-L6-v2\")\ndb = Chroma(persist_directory=\"./db-mawared\",\n            embedding_function=embeddings)\n# Create retriever\nretriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs= {\"k\": 3}\n)\nload_dotenv()",
+        "detail": "Mamba",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "Mamba",
+        "description": "Mamba",
+        "peekOfCode": "db = Chroma(persist_directory=\"./db-mawared\",\n            embedding_function=embeddings)\n# Create retriever\nretriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs= {\"k\": 3}\n)\nload_dotenv()\nos.environ[\"MISTRAL_API_KEY\"] = os.getenv(\"MISTRAL_API_KEY\")\nllm = model = ChatMistralAI(model=\"open-codestral-mamba\")",
+        "detail": "Mamba",
+        "documentation": {}
+    },
+    {
+        "label": "retriever",
+        "kind": 5,
+        "importPath": "Mamba",
+        "description": "Mamba",
+        "peekOfCode": "retriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs= {\"k\": 3}\n)\nload_dotenv()\nos.environ[\"MISTRAL_API_KEY\"] = os.getenv(\"MISTRAL_API_KEY\")\nllm = model = ChatMistralAI(model=\"open-codestral-mamba\")\n# Create prompt template\ntemplate = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer user questions based strictly on the provided context. If the context is insufficient, ask clarifying questions to gather more information.",
+        "detail": "Mamba",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"MISTRAL_API_KEY\"]",
+        "kind": 5,
+        "importPath": "Mamba",
+        "description": "Mamba",
+        "peekOfCode": "os.environ[\"MISTRAL_API_KEY\"] = os.getenv(\"MISTRAL_API_KEY\")\nllm = model = ChatMistralAI(model=\"open-codestral-mamba\")\n# Create prompt template\ntemplate = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer user questions based strictly on the provided context. If the context is insufficient, ask clarifying questions to gather more information.\nGuidelines:\n1. Use only the provided context to generate answers.\n2. Be concise and direct.\n3. If the context is insufficient, ask relevant follow-up questions instead of speculating.\n4. Present answers in numbered steps when appropriate.",
+        "detail": "Mamba",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "Mamba",
+        "description": "Mamba",
+        "peekOfCode": "llm = model = ChatMistralAI(model=\"open-codestral-mamba\")\n# Create prompt template\ntemplate = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer user questions based strictly on the provided context. If the context is insufficient, ask clarifying questions to gather more information.\nGuidelines:\n1. Use only the provided context to generate answers.\n2. Be concise and direct.\n3. If the context is insufficient, ask relevant follow-up questions instead of speculating.\n4. Present answers in numbered steps when appropriate.\nWhen responding to a question, follow these steps:",
+        "detail": "Mamba",
+        "documentation": {}
+    },
+    {
+        "label": "template",
+        "kind": 5,
+        "importPath": "Mamba",
+        "description": "Mamba",
+        "peekOfCode": "template = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer user questions based strictly on the provided context. If the context is insufficient, ask clarifying questions to gather more information.\nGuidelines:\n1. Use only the provided context to generate answers.\n2. Be concise and direct.\n3. If the context is insufficient, ask relevant follow-up questions instead of speculating.\n4. Present answers in numbered steps when appropriate.\nWhen responding to a question, follow these steps:\n1. Analyze the Question\n   - Carefully read and comprehend the context and details.",
+        "detail": "Mamba",
+        "documentation": {}
+    },
+    {
+        "label": "prompt",
+        "kind": 5,
+        "importPath": "Mamba",
+        "description": "Mamba",
+        "peekOfCode": "prompt = ChatPromptTemplate.from_template(template)\n# Create the RAG chain using LCEL with prompt printing and streaming output\nrag_chain = (\n    {\"context\": retriever, \"question\": RunnablePassthrough()}\n    | prompt\n    | llm\n    | StrOutputParser()\n)\n# Function to ask questions\ndef ask_question(question):",
+        "detail": "Mamba",
+        "documentation": {}
+    },
+    {
+        "label": "rag_chain",
+        "kind": 5,
+        "importPath": "Mamba",
+        "description": "Mamba",
+        "peekOfCode": "rag_chain = (\n    {\"context\": retriever, \"question\": RunnablePassthrough()}\n    | prompt\n    | llm\n    | StrOutputParser()\n)\n# Function to ask questions\ndef ask_question(question):\n    print(\"Answer:\\t\", end=\" \", flush=True)\n    for chunk in rag_chain.stream(question):",
+        "detail": "Mamba",
+        "documentation": {}
+    },
+    {
+        "label": "ask_question",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def ask_question(question):\n    print(\"Answer:\\t\", end=\" \", flush=True)\n    for chunk in rag_chain.stream(question):\n        print(chunk, end=\"\", flush=True)\n    print(\"\\n\")\n# Example usage\nif __name__ == \"__main__\":\n    while True:\n        user_question = input(\"Ask a question (or type 'quit' to exit): \")\n        if user_question.lower() == 'quit':",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "embeddings",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "embeddings = OllamaEmbeddings(model=\"nomic-embed-text\", show_progress=False)\n# embeddings = HuggingFaceEmbeddings(model_name=\"sentence-transformers/all-MiniLM-L6-v2\")\ndb = Chroma(persist_directory=\"./db-mawared\",\n            embedding_function=embeddings)\n# Create retriever\nretriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs= {\"k\": 5}\n)\nload_dotenv()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "db = Chroma(persist_directory=\"./db-mawared\",\n            embedding_function=embeddings)\n# Create retriever\nretriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs= {\"k\": 5}\n)\nload_dotenv()\nos.environ[\"GROQ_API_KEY\"] = os.getenv(\"GROQ_API\")\n# local_llm = 'llama3.1",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "retriever",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "retriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs= {\"k\": 5}\n)\nload_dotenv()\nos.environ[\"GROQ_API_KEY\"] = os.getenv(\"GROQ_API\")\n# local_llm = 'llama3.1\n# llm = ChatOllama(model=local_llm)\nllm = ChatGroq(\n    model=\"llama-3.1-8b-instant\",",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"GROQ_API_KEY\"]",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "os.environ[\"GROQ_API_KEY\"] = os.getenv(\"GROQ_API\")\n# local_llm = 'llama3.1\n# llm = ChatOllama(model=local_llm)\nllm = ChatGroq(\n    model=\"llama-3.1-8b-instant\",\n    temperature=0,\n    max_tokens=None,\n    timeout=None,\n    max_retries=2,\n    # other params...",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "llm = ChatGroq(\n    model=\"llama-3.1-8b-instant\",\n    temperature=0,\n    max_tokens=None,\n    timeout=None,\n    max_retries=2,\n    # other params...\n)\n# Create prompt template\ntemplate = \"\"\"",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "template",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "template = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer the user's question based strictly on the provided context. If the context does not contain the answer, you should ask clarifying questions to gather more information.\nMake sure to:\n1. Use only the provided context to generate the answer.\n2. Be concise and direct.\n3. If the context is insufficient, ask relevant follow-up questions instead of speculating.\n4. Only answer from the context.\nContext:\n{context}\nQuestion: {question}",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "prompt",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "prompt = ChatPromptTemplate.from_template(template)\n# Create the RAG chain using LCEL with prompt printing and streaming output\nrag_chain = (\n    {\"context\": retriever, \"question\": RunnablePassthrough()}\n    | prompt\n    | llm\n    | StrOutputParser()\n)\n# Function to ask questions\ndef ask_question(question):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "rag_chain",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "rag_chain = (\n    {\"context\": retriever, \"question\": RunnablePassthrough()}\n    | prompt\n    | llm\n    | StrOutputParser()\n)\n# Function to ask questions\ndef ask_question(question):\n    print(\"Answer:\\t\", end=\" \", flush=True)\n    for chunk in rag_chain.stream(question):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "ask_question",
+        "kind": 2,
+        "importPath": "improvedrag",
+        "description": "improvedrag",
+        "peekOfCode": "def ask_question(question: str) -> None:\n    try:\n        print(\"Answer:\\t\", end=\" \", flush=True)\n        for chunk in rag_chain.stream(question):\n            print(chunk, end=\"\", flush=True)\n        print(\"\\n\")\n    except Exception as e:\n        print(f\"\\nError processing question: {str(e)}\")\nif __name__ == \"__main__\":\n    while True:",
+        "detail": "improvedrag",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"GROQ_API_KEY\"]",
+        "kind": 5,
+        "importPath": "improvedrag",
+        "description": "improvedrag",
+        "peekOfCode": "os.environ[\"GROQ_API_KEY\"] = os.getenv(\"GROQ_API\")\n# Initialize embeddings and vector store\nembeddings = OllamaEmbeddings(\n    model=\"nomic-embed-text\",\n    show_progress=False,\n)\ndb = Chroma(\n    persist_directory=\"./db-mawared\",\n    embedding_function=embeddings,\n)",
+        "detail": "improvedrag",
+        "documentation": {}
+    },
+    {
+        "label": "embeddings",
+        "kind": 5,
+        "importPath": "improvedrag",
+        "description": "improvedrag",
+        "peekOfCode": "embeddings = OllamaEmbeddings(\n    model=\"nomic-embed-text\",\n    show_progress=False,\n)\ndb = Chroma(\n    persist_directory=\"./db-mawared\",\n    embedding_function=embeddings,\n)\n# Create retriever with MMR search\nretriever = db.as_retriever(",
+        "detail": "improvedrag",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "improvedrag",
+        "description": "improvedrag",
+        "peekOfCode": "db = Chroma(\n    persist_directory=\"./db-mawared\",\n    embedding_function=embeddings,\n)\n# Create retriever with MMR search\nretriever = db.as_retriever(\n    search_type=\"mmr\",\n    search_kwargs={\n        \"k\": 5,\n        \"fetch_k\": 8,",
+        "detail": "improvedrag",
+        "documentation": {}
+    },
+    {
+        "label": "retriever",
+        "kind": 5,
+        "importPath": "improvedrag",
+        "description": "improvedrag",
+        "peekOfCode": "retriever = db.as_retriever(\n    search_type=\"mmr\",\n    search_kwargs={\n        \"k\": 5,\n        \"fetch_k\": 8,\n        \"lambda_mult\": 0.7\n    }\n)\n# Initialize LLM\nllm = ChatGroq(",
+        "detail": "improvedrag",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "improvedrag",
+        "description": "improvedrag",
+        "peekOfCode": "llm = ChatGroq(\n    model=\"llama-3.1-70b-versatile\",\n    temperature=0,\n    max_tokens=None,\n    timeout=None,\n    max_retries=5\n)\n# Add contextual compression\ncompressor = LLMChainExtractor.from_llm(llm)\ncompression_retriever = ContextualCompressionRetriever(",
+        "detail": "improvedrag",
+        "documentation": {}
+    },
+    {
+        "label": "compressor",
+        "kind": 5,
+        "importPath": "improvedrag",
+        "description": "improvedrag",
+        "peekOfCode": "compressor = LLMChainExtractor.from_llm(llm)\ncompression_retriever = ContextualCompressionRetriever(\n    base_retriever=retriever,\n    base_compressor=compressor\n)\n# Enhanced RAG-focused prompt template\ntemplate = \"\"\"\nأنت مساعد متخصص في الإجابة على الأسئلة باستخدام المعلومات المقدمة حصراً في السياق أدناه. يجب أن تعتمد إجاباتك فقط على المعلومات الموجودة في النص المسترجع.\nالقواعد الأساسية:\n1. استخدم فقط المعلومات الموجودة في السياق المقدم",
+        "detail": "improvedrag",
+        "documentation": {}
+    },
+    {
+        "label": "compression_retriever",
+        "kind": 5,
+        "importPath": "improvedrag",
+        "description": "improvedrag",
+        "peekOfCode": "compression_retriever = ContextualCompressionRetriever(\n    base_retriever=retriever,\n    base_compressor=compressor\n)\n# Enhanced RAG-focused prompt template\ntemplate = \"\"\"\nأنت مساعد متخصص في الإجابة على الأسئلة باستخدام المعلومات المقدمة حصراً في السياق أدناه. يجب أن تعتمد إجاباتك فقط على المعلومات الموجودة في النص المسترجع.\nالقواعد الأساسية:\n1. استخدم فقط المعلومات الموجودة في السياق المقدم\n2. إذا لم تجد المعلومات في السياق، قل بوضوح \"لا أستطيع الإجابة على هذا السؤال بناءً على السياق المتوفر\"",
+        "detail": "improvedrag",
+        "documentation": {}
+    },
+    {
+        "label": "template",
+        "kind": 5,
+        "importPath": "improvedrag",
+        "description": "improvedrag",
+        "peekOfCode": "template = \"\"\"\nأنت مساعد متخصص في الإجابة على الأسئلة باستخدام المعلومات المقدمة حصراً في السياق أدناه. يجب أن تعتمد إجاباتك فقط على المعلومات الموجودة في النص المسترجع.\nالقواعد الأساسية:\n1. استخدم فقط المعلومات الموجودة في السياق المقدم\n2. إذا لم تجد المعلومات في السياق، قل بوضوح \"لا أستطيع الإجابة على هذا السؤال بناءً على السياق المتوفر\"\n3. لا تستخدم معرفتك العامة أو معلومات خارجية\n4. لا تستنتج أو تخمن معلومات غير موجودة في السياق\n5. كن دقيقاً في اقتباس المعلومات من السياق\nالسياق المقدم:\n{context}",
+        "detail": "improvedrag",
+        "documentation": {}
+    },
+    {
+        "label": "prompt",
+        "kind": 5,
+        "importPath": "improvedrag",
+        "description": "improvedrag",
+        "peekOfCode": "prompt = ChatPromptTemplatehi.from_template(template)\n# Create the RAG chain\nrag_chain = (\n    {\"context\": compression_retriever, \"question\": RunnablePassthrough()}\n    | prompt\n    | llm\n    | StrOutputParser()\n)\n# Function to ask questions\ndef ask_question(question: str) -> None:",
+        "detail": "improvedrag",
+        "documentation": {}
+    },
+    {
+        "label": "rag_chain",
+        "kind": 5,
+        "importPath": "improvedrag",
+        "description": "improvedrag",
+        "peekOfCode": "rag_chain = (\n    {\"context\": compression_retriever, \"question\": RunnablePassthrough()}\n    | prompt\n    | llm\n    | StrOutputParser()\n)\n# Function to ask questions\ndef ask_question(question: str) -> None:\n    try:\n        print(\"Answer:\\t\", end=\" \", flush=True)",
+        "detail": "improvedrag",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "newindexer",
+        "description": "newindexer",
+        "peekOfCode": "device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\n# Load documents from a PDF file\nloader = DirectoryLoader(\"Data\", glob=\"**/*.pdf\")\nprint(\"PDF files loaded\")\ndocuments = loader.load()\nprint(f\"Number of documents loaded: {len(documents)}\")\n# Create embeddings using multilingual-e5-large model\nembeddings = HuggingFaceEmbeddings(\n    model_name=\"intfloat/multilingual-e5-large\",\n    model_kwargs={'device': device},",
+        "detail": "newindexer",
+        "documentation": {}
+    },
+    {
+        "label": "loader",
+        "kind": 5,
+        "importPath": "newindexer",
+        "description": "newindexer",
+        "peekOfCode": "loader = DirectoryLoader(\"Data\", glob=\"**/*.pdf\")\nprint(\"PDF files loaded\")\ndocuments = loader.load()\nprint(f\"Number of documents loaded: {len(documents)}\")\n# Create embeddings using multilingual-e5-large model\nembeddings = HuggingFaceEmbeddings(\n    model_name=\"intfloat/multilingual-e5-large\",\n    model_kwargs={'device': device},\n    encode_kwargs={'normalize_embeddings': True}\n)",
+        "detail": "newindexer",
+        "documentation": {}
+    },
+    {
+        "label": "documents",
+        "kind": 5,
+        "importPath": "newindexer",
+        "description": "newindexer",
+        "peekOfCode": "documents = loader.load()\nprint(f\"Number of documents loaded: {len(documents)}\")\n# Create embeddings using multilingual-e5-large model\nembeddings = HuggingFaceEmbeddings(\n    model_name=\"intfloat/multilingual-e5-large\",\n    model_kwargs={'device': device},\n    encode_kwargs={'normalize_embeddings': True}\n)\n# Create text splitter with Arabic-friendly settings\ntext_splitter = RecursiveCharacterTextSplitter(",
+        "detail": "newindexer",
+        "documentation": {}
+    },
+    {
+        "label": "embeddings",
+        "kind": 5,
+        "importPath": "newindexer",
+        "description": "newindexer",
+        "peekOfCode": "embeddings = HuggingFaceEmbeddings(\n    model_name=\"intfloat/multilingual-e5-large\",\n    model_kwargs={'device': device},\n    encode_kwargs={'normalize_embeddings': True}\n)\n# Create text splitter with Arabic-friendly settings\ntext_splitter = RecursiveCharacterTextSplitter(\n    chunk_size=500,\n    chunk_overlap=50,\n    length_function=len,",
+        "detail": "newindexer",
+        "documentation": {}
+    },
+    {
+        "label": "text_splitter",
+        "kind": 5,
+        "importPath": "newindexer",
+        "description": "newindexer",
+        "peekOfCode": "text_splitter = RecursiveCharacterTextSplitter(\n    chunk_size=500,\n    chunk_overlap=50,\n    length_function=len,\n    add_start_index=True,\n    # Separators prioritized for Arabic text\n    separators=[\"\\n\\n\", \"\\n\", \".\", \"!\", \"?\", \"،\", \";\", \",\", \" \", \"\"]\n)\n# Split documents into chunks\ntexts = text_splitter.split_documents(documents)",
+        "detail": "newindexer",
+        "documentation": {}
+    },
+    {
+        "label": "texts",
+        "kind": 5,
+        "importPath": "newindexer",
+        "description": "newindexer",
+        "peekOfCode": "texts = text_splitter.split_documents(documents)\n# Create vector store\nvectorstore = Chroma.from_documents(\n    documents=texts, \n    embedding=embeddings,\n    persist_directory=\"./db-mawared\"\n)\nprint(\"Vector store created successfully\")",
+        "detail": "newindexer",
+        "documentation": {}
+    },
+    {
+        "label": "vectorstore",
+        "kind": 5,
+        "importPath": "newindexer",
+        "description": "newindexer",
+        "peekOfCode": "vectorstore = Chroma.from_documents(\n    documents=texts, \n    embedding=embeddings,\n    persist_directory=\"./db-mawared\"\n)\nprint(\"Vector store created successfully\")",
+        "detail": "newindexer",
         "documentation": {}
     }
 ]
