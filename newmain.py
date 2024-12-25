@@ -8,6 +8,7 @@ from langchain.schema.runnable import RunnablePassthrough
 from langchain.schema.output_parser import StrOutputParser
 from qdrant_client import QdrantClient, models
 from langchain_qdrant import Qdrant
+from langchain_qdrant import QdrantVectorStore
 
 # Load environment variables
 load_dotenv()
@@ -24,7 +25,7 @@ client = QdrantClient(
     prefer_grpc=True
 )
 
-collection_name = "mawared"
+collection_name = "compunancy"
 
 # Try to create collection, handle if it already exists
 try:
@@ -67,7 +68,7 @@ llm = ChatGroq(
 
 # Create prompt template
 template = """
-You are an expert assistant specializing in the Mawared HR System. Your task is to answer the user's question strictly based on the provided context. If the context lacks sufficient information, utilize a Chain-of-Thought (CoT) reasoning process in conjunction with Retrieval-Augmented Generation (RAG) principles to structure your response and retrieve additional details effectively.
+You are an expert assistant specializing in the LONG COT RAG. Your task is to answer the user's question strictly based on the provided context. If the context lacks sufficient information, utilize a Chain-of-Thought (CoT) reasoning process in conjunction with Retrieval-Augmented Generation (RAG) principles to structure your response and retrieve additional details effectively.
 
 To ensure high-quality responses, follow these steps:
 
