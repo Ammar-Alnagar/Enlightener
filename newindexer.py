@@ -1,12 +1,12 @@
 import os
-from langchain_community.document_loaders import DirectoryLoader, PyPDFLoader
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_community.vectorstores import Qdrant # Changed import
-from qdrant_client import QdrantClient, models
-from tqdm import tqdm  # for progress bars
 from dotenv import load_dotenv
-from pydantic import BaseModel
+from langchain_community.document_loaders import DirectoryLoader, PyPDFLoader
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.vectorstores import Qdrant  # Changed import
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from qdrant_client import QdrantClient, models
+from langchain_qdrant import Qdrant
+from tqdm import tqdm  # for progress bars
 
 load_dotenv()
 
