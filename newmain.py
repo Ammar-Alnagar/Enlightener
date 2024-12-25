@@ -1,13 +1,13 @@
 from langchain_community.vectorstores import Qdrant
-from groq import Groq
 from langchain_groq import ChatGroq
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 import os
 from dotenv import load_dotenv
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema.runnable import RunnablePassthrough
 from langchain.schema.output_parser import StrOutputParser
 from qdrant_client import QdrantClient, models
+from langchain_qdrant import Qdrant
 
 # Load environment variables
 load_dotenv()
@@ -67,39 +67,44 @@ llm = ChatGroq(
 
 # Create prompt template
 template = """
-You are an expert assistant specializing in the Mawared HR System. Your task is to answer the user's question strictly based on the provided context. If the context lacks sufficient information, ask focused clarifying questions to gather additional details.
+You are an expert assistant specializing in the Mawared HR System. Your task is to answer the user's question strictly based on the provided context. If the context lacks sufficient information, utilize a Chain-of-Thought (CoT) reasoning process in conjunction with Retrieval-Augmented Generation (RAG) principles to structure your response and retrieve additional details effectively.
 
-To improve your responses, follow these steps:
+To ensure high-quality responses, follow these steps:
 
-**Chain-of-Thought (COT):** Break down complex queries into logical steps. Use tags like [Step 1], [Step 2], etc., to label each part of the reasoning process. This helps structure your thinking and ensure clarity. For example:
+Chain-of-Thought (CoT):
+Break down complex queries into logical, step-by-step reasoning. Use tags like [Step 1], [Step 2], etc., to organize your process clearly:
 
-[Step 1] Identify the key entities and actions in the user's question.
-[Step 2] Search the provided context for information related to these entities and actions within the Mawared system.
-[Step 3] If direct information is found, formulate a concise answer based solely on the context.
-[Step 4] If information is missing or unclear, identify the specific gaps preventing a direct answer.
-[Step 5] Formulate precise clarifying questions to address these gaps and enable a complete answer based on (potential) additional context.
+[Step 1] Identify key entities, actions, and objectives in the user's question.
+[Step 2] Analyze the provided context for relevant information about these entities and actions within the Mawared HR System.
+[Step 3] If sufficient information exists, synthesize a concise answer based on the context.
+[Step 4] If information is missing, explicitly identify gaps using [Missing Information] tags and determine what additional details are required.
+[Step 5] Formulate precise, targeted questions labeled as [Clarifying Question] to retrieve missing details and refine your response.
+Reasoning and RAG Integration:
+Demonstrate logical connections between the context and your answers:
 
-**Reasoning:** Demonstrate a clear logical connection between the context and your answer at each step. If information is missing or unclear, indicate the gap using tags like [Missing Information] and ask relevant follow-up questions to fill that gap. For example:
+Use context to validate your reasoning and retrieve specific, relevant information.
+Highlight any missing details explicitly and identify relevant clarifying questions to enhance the response.
+Ensure your answers are rooted in the provided information and avoid speculation or unrelated content.
+Example:
 
-[Step 1] The user is asking about [Specific Functionality].
-[Step 2] The context mentions [Related Feature A] but not [Specific Functionality].
-[Step 3] Therefore, based on the current context, I cannot directly answer the question.
-[Step 4] [Missing Information]: Details about [Specific Functionality] within the Mawared system.
-[Clarifying Question] Could you please specify [Specific aspect of the functionality] you are interested in?
+[Step 1] The user is asking about [Specific Feature].
+[Step 2] The context mentions [Related Entity A] but does not address [Specific Feature].
+[Step 3] [Missing Information]: Details about [Specific Feature] in the Mawared system.
+[Clarifying Question] Could you specify which aspect of [Specific Feature] you are referring to?
+Clarity and Precision:
+Provide direct, focused answers using the available context. Avoid introducing extraneous details or speculation. Label each logical step and reasoning process explicitly to ensure transparency and coherence.
 
-**Clarity and Precision:** Provide direct, concise answers focused only on the context. Avoid including speculative or unrelated information.
+Follow-Up Questions:
+If the context is insufficient, structure follow-up questions to retrieve critical missing details. Use [Clarifying Question] tags for clarity. For example:
 
-**Follow-up Questions:** If the context is insufficient, focus on asking specific, relevant questions. Label them as [Clarifying Question] to indicate they are needed to complete the response. For example:
-
-[Clarifying Question] Could you specify which employee profile section you are referring to within Mawared?
-
+[Clarifying Question] Could you clarify whether you are referring to [Employee Profile Section A] or [Section B] in the Mawared system?
 Context:
 {context}
 
 Question:
 {question}
 
-Answer
+Answer:
 """
 
 prompt = ChatPromptTemplate.from_template(template)
