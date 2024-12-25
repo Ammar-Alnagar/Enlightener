@@ -1,31 +1,60 @@
-from langchain_community.embeddings.ollama import OllamaEmbeddings
-from langchain_community.vectorstores.chroma import Chroma
-from langchain_community.chat_models.ollama import ChatOllama
+from langchain_community.vectorstores import Qdrant
 from groq import Groq
 from langchain_groq import ChatGroq
+from langchain_community.embeddings import HuggingFaceEmbeddings
 import os
 from dotenv import load_dotenv
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema.runnable import RunnablePassthrough
 from langchain.schema.output_parser import StrOutputParser
+from qdrant_client import QdrantClient, models
 
-# # Create embeddingsclear
-embeddings = OllamaEmbeddings(model="nomic-embed-text", show_progress=False)
-# embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+# Load environment variables
+load_dotenv()
 
-db = Chroma(persist_directory="./db-mawared",
-            embedding_function=embeddings)
+os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API")
+
+# HuggingFace Embeddings
+embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-large-en-v1.5")
+
+# Qdrant Client Setup
+client = QdrantClient(
+    url=os.getenv("QDRANT_URL"),
+    api_key=os.getenv("QDRANT_API_KEY"),
+    prefer_grpc=True
+)
+
+collection_name = "mawared"
+
+# Try to create collection, handle if it already exists
+try:
+    client.create_collection(
+        collection_name=collection_name,
+        vectors_config=models.VectorParams(
+            size=768,  # GTE-large embedding size
+            distance=models.Distance.COSINE
+        ),
+    )
+    print(f"Created new collection: {collection_name}")
+except Exception as e:
+    if "already exists" in str(e):
+        print(f"Collection {collection_name} already exists, continuing...")
+    else:
+        raise e
+
+# Create Qdrant vector store
+db = Qdrant(
+    client=client,
+    collection_name=collection_name,
+    embeddings=embeddings,
+)
 
 # Create retriever
 retriever = db.as_retriever(
     search_type="similarity",
-    search_kwargs= {"k": 5}
+    search_kwargs={"k": 5}
 )
 
-load_dotenv()
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API")
-# local_llm = 'llama3.1
-# llm = ChatOllama(model=local_llm)
 
 llm = ChatGroq(
     model="llama-3.3-70b-versatile",
@@ -35,8 +64,6 @@ llm = ChatGroq(
     max_retries=2,
     # other params...
 )
-    
-
 
 # Create prompt template
 template = """
@@ -86,7 +113,7 @@ def ask_question(question):
 # Example usage
 if __name__ == "__main__":
     while True:
-        user_question = input("Ask a question (or type 'quit' to exit): ")
+        user_question = input("\n \n \n Ask a question (or type 'quit' to exit): ")
         if user_question.lower() == 'quit':
             break
         answer = ask_question(user_question)

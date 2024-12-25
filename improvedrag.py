@@ -36,8 +36,8 @@ retriever = db.as_retriever(
 
 # Initialize LLM
 llm = ChatGroq(
-    model="llama-3.1-70b-versatile",
-    temperature=0,
+    model="llama-3.3-70b-versatile",
+    temperature=0.1,
     max_tokens=None,
     timeout=None,
     max_retries=5
@@ -52,22 +52,29 @@ compression_retriever = ContextualCompressionRetriever(
 
 # Enhanced RAG-focused prompt template
 template = """
-أنت مساعد متخصص في الإجابة على الأسئلة باستخدام المعلومات المقدمة حصراً في السياق أدناه. يجب أن تعتمد إجاباتك فقط على المعلومات الموجودة في النص المسترجع.
+You are an expert assistant specializing in the Mawared HR System. Your task is to answer the user's question strictly based on the provided context. If the context lacks sufficient information, ask focused clarifying questions to gather additional details.
 
-القواعد الأساسية:
-1. استخدم فقط المعلومات الموجودة في السياق المقدم
-2. إذا لم تجد المعلومات في السياق، قل بوضوح "لا أستطيع الإجابة على هذا السؤال بناءً على السياق المتوفر"
-3. لا تستخدم معرفتك العامة أو معلومات خارجية
-4. لا تستنتج أو تخمن معلومات غير موجودة في السياق
-5. كن دقيقاً في اقتباس المعلومات من السياق
+To improve your responses, follow these steps:
 
-السياق المقدم:
+Chain-of-Thought (COT): Break down complex queries into logical steps. Use tags like [Step 1], [Step 2], etc., to label each part of the reasoning process. This helps structure your thinking and ensure clarity. For example:
+
+[Step 1] Identify the key details in the context relevant to the question.
+[Step 2] Break down any assumptions or information gaps.
+[Step 3] Combine all pieces to form the final, well-reasoned response.
+Reasoning: Demonstrate a clear logical connection between the context and your answer at each step. If information is missing or unclear, indicate the gap using tags like [Missing Information] and ask relevant follow-up questions to fill that gap.
+
+Clarity and Precision: Provide direct, concise answers focused only on the context. Avoid including speculative or unrelated information.
+
+Follow-up Questions: If the context is insufficient, focus on asking specific, relevant questions. Label them as [Clarifying Question] to indicate they are needed to complete the response. For example:
+
+[Clarifying Question] Could you specify which employee section you're referring to?
+Context:
 {context}
 
-السؤال:
+Question:
 {question}
 
-الإجابة:
+Answer
 """
 
 prompt = ChatPromptTemplatehi.from_template(template)

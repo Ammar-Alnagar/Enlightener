@@ -1,5 +1,40 @@
 [
     {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
         "label": "OllamaEmbeddings",
         "importPath": "langchain_community.embeddings.ollama",
         "description": "langchain_community.embeddings.ollama",
@@ -89,12 +124,19 @@
         "documentation": {}
     },
     {
-        "label": "os",
-        "kind": 6,
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
         "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
         "documentation": {}
     },
     {
@@ -170,11 +212,11 @@
         "documentation": {}
     },
     {
-        "label": "RunnablePassthrough",
-        "importPath": "langchain.schema.runnable",
-        "description": "langchain.schema.runnable",
+        "label": "ChatPromptTemplate",
+        "importPath": "langchain.prompts",
+        "description": "langchain.prompts",
         "isExtraImport": true,
-        "detail": "langchain.schema.runnable",
+        "detail": "langchain.prompts",
         "documentation": {}
     },
     {
@@ -199,6 +241,30 @@
         "description": "langchain.schema.runnable",
         "isExtraImport": true,
         "detail": "langchain.schema.runnable",
+        "documentation": {}
+    },
+    {
+        "label": "RunnablePassthrough",
+        "importPath": "langchain.schema.runnable",
+        "description": "langchain.schema.runnable",
+        "isExtraImport": true,
+        "detail": "langchain.schema.runnable",
+        "documentation": {}
+    },
+    {
+        "label": "RunnablePassthrough",
+        "importPath": "langchain.schema.runnable",
+        "description": "langchain.schema.runnable",
+        "isExtraImport": true,
+        "detail": "langchain.schema.runnable",
+        "documentation": {}
+    },
+    {
+        "label": "StrOutputParser",
+        "importPath": "langchain.schema.output_parser",
+        "description": "langchain.schema.output_parser",
+        "isExtraImport": true,
+        "detail": "langchain.schema.output_parser",
         "documentation": {}
     },
     {
@@ -259,6 +325,14 @@
     },
     {
         "label": "DirectoryLoader",
+        "importPath": "langchain_community.document_loaders",
+        "description": "langchain_community.document_loaders",
+        "isExtraImport": true,
+        "detail": "langchain_community.document_loaders",
+        "documentation": {}
+    },
+    {
+        "label": "PyPDFLoader",
         "importPath": "langchain_community.document_loaders",
         "description": "langchain_community.document_loaders",
         "isExtraImport": true,
@@ -282,6 +356,14 @@
         "documentation": {}
     },
     {
+        "label": "HuggingFaceEmbeddings",
+        "importPath": "langchain_community.embeddings",
+        "description": "langchain_community.embeddings",
+        "isExtraImport": true,
+        "detail": "langchain_community.embeddings",
+        "documentation": {}
+    },
+    {
         "label": "Chroma",
         "importPath": "langchain_community.vectorstores",
         "description": "langchain_community.vectorstores",
@@ -290,7 +372,15 @@
         "documentation": {}
     },
     {
-        "label": "Chroma",
+        "label": "Qdrant",
+        "importPath": "langchain_community.vectorstores",
+        "description": "langchain_community.vectorstores",
+        "isExtraImport": true,
+        "detail": "langchain_community.vectorstores",
+        "documentation": {}
+    },
+    {
+        "label": "Qdrant",
         "importPath": "langchain_community.vectorstores",
         "description": "langchain_community.vectorstores",
         "isExtraImport": true,
@@ -319,6 +409,22 @@
         "description": "groq",
         "isExtraImport": true,
         "detail": "groq",
+        "documentation": {}
+    },
+    {
+        "label": "Groq",
+        "importPath": "groq",
+        "description": "groq",
+        "isExtraImport": true,
+        "detail": "groq",
+        "documentation": {}
+    },
+    {
+        "label": "ChatGroq",
+        "importPath": "langchain_groq",
+        "description": "langchain_groq",
+        "isExtraImport": true,
+        "detail": "langchain_groq",
         "documentation": {}
     },
     {
@@ -354,12 +460,132 @@
         "documentation": {}
     },
     {
-        "label": "torch",
-        "kind": 6,
+        "label": "QdrantClient",
+        "importPath": "qdrant_client",
+        "description": "qdrant_client",
         "isExtraImport": true,
-        "importPath": "torch",
-        "description": "torch",
-        "detail": "torch",
+        "detail": "qdrant_client",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "qdrant_client",
+        "description": "qdrant_client",
+        "isExtraImport": true,
+        "detail": "qdrant_client",
+        "documentation": {}
+    },
+    {
+        "label": "QdrantClient",
+        "importPath": "qdrant_client",
+        "description": "qdrant_client",
+        "isExtraImport": true,
+        "detail": "qdrant_client",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "qdrant_client",
+        "description": "qdrant_client",
+        "isExtraImport": true,
+        "detail": "qdrant_client",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
         "documentation": {}
     },
     {
@@ -439,7 +665,7 @@
         "kind": 5,
         "importPath": "Indexer",
         "description": "Indexer",
-        "peekOfCode": "loader = DirectoryLoader(\"Data\", glob=\"**/*.pdf\")\nprint(\"pdf loaded loader\")\ndocuments = loader.load()\nprint(len(documents))\n# # Create embeddingsclear\nembeddings = OllamaEmbeddings(model=\"nomic-embed-text\", show_progress=True)\n# # Create Semantic Text Splitter\n# text_splitter = SemanticChunker(embeddings, breakpoint_threshold_type=\"interquartile\")\ntext_splitter = RecursiveCharacterTextSplitter(\n    chunk_size=5000,",
+        "peekOfCode": "loader = DirectoryLoader(\"Data\", glob=\"**/*.pdf\")\nprint(\"pdf loaded loader\")\ndocuments = loader.load()\nprint(len(documents))\n# # Create embeddingsclear\nembeddings = OllamaEmbeddings(model=\"nomic-embed-text\", show_progress=True)\n# # Create Semantic Text Splitter\n# text_splitter = SemanticChunker(embeddings, breakpoint_threshold_type=\"interquartile\")\ntext_splitter = RecursiveCharacterTextSplitter(\n    chunk_size=500,",
         "detail": "Indexer",
         "documentation": {}
     },
@@ -448,7 +674,7 @@
         "kind": 5,
         "importPath": "Indexer",
         "description": "Indexer",
-        "peekOfCode": "documents = loader.load()\nprint(len(documents))\n# # Create embeddingsclear\nembeddings = OllamaEmbeddings(model=\"nomic-embed-text\", show_progress=True)\n# # Create Semantic Text Splitter\n# text_splitter = SemanticChunker(embeddings, breakpoint_threshold_type=\"interquartile\")\ntext_splitter = RecursiveCharacterTextSplitter(\n    chunk_size=5000,\n    chunk_overlap=300,\n    add_start_index=True,",
+        "peekOfCode": "documents = loader.load()\nprint(len(documents))\n# # Create embeddingsclear\nembeddings = OllamaEmbeddings(model=\"nomic-embed-text\", show_progress=True)\n# # Create Semantic Text Splitter\n# text_splitter = SemanticChunker(embeddings, breakpoint_threshold_type=\"interquartile\")\ntext_splitter = RecursiveCharacterTextSplitter(\n    chunk_size=500,\n    chunk_overlap=300,\n    add_start_index=True,",
         "detail": "Indexer",
         "documentation": {}
     },
@@ -457,7 +683,7 @@
         "kind": 5,
         "importPath": "Indexer",
         "description": "Indexer",
-        "peekOfCode": "embeddings = OllamaEmbeddings(model=\"nomic-embed-text\", show_progress=True)\n# # Create Semantic Text Splitter\n# text_splitter = SemanticChunker(embeddings, breakpoint_threshold_type=\"interquartile\")\ntext_splitter = RecursiveCharacterTextSplitter(\n    chunk_size=5000,\n    chunk_overlap=300,\n    add_start_index=True,\n)\n# # Split documents into chunks\ntexts = text_splitter.split_documents(documents)",
+        "peekOfCode": "embeddings = OllamaEmbeddings(model=\"nomic-embed-text\", show_progress=True)\n# # Create Semantic Text Splitter\n# text_splitter = SemanticChunker(embeddings, breakpoint_threshold_type=\"interquartile\")\ntext_splitter = RecursiveCharacterTextSplitter(\n    chunk_size=500,\n    chunk_overlap=300,\n    add_start_index=True,\n)\n# # Split documents into chunks\ntexts = text_splitter.split_documents(documents)",
         "detail": "Indexer",
         "documentation": {}
     },
@@ -466,7 +692,7 @@
         "kind": 5,
         "importPath": "Indexer",
         "description": "Indexer",
-        "peekOfCode": "text_splitter = RecursiveCharacterTextSplitter(\n    chunk_size=5000,\n    chunk_overlap=300,\n    add_start_index=True,\n)\n# # Split documents into chunks\ntexts = text_splitter.split_documents(documents)\n# # Create vector store\nvectorstore = Chroma.from_documents(\n    documents=texts, ",
+        "peekOfCode": "text_splitter = RecursiveCharacterTextSplitter(\n    chunk_size=500,\n    chunk_overlap=300,\n    add_start_index=True,\n)\n# # Split documents into chunks\ntexts = text_splitter.split_documents(documents)\n# # Create vector store\nvectorstore = Chroma.from_documents(\n    documents=texts, ",
         "detail": "Indexer",
         "documentation": {}
     },
@@ -601,7 +827,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "retriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs= {\"k\": 5}\n)\nload_dotenv()\nos.environ[\"GROQ_API_KEY\"] = os.getenv(\"GROQ_API\")\n# local_llm = 'llama3.1\n# llm = ChatOllama(model=local_llm)\nllm = ChatGroq(\n    model=\"llama-3.1-8b-instant\",",
+        "peekOfCode": "retriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs= {\"k\": 5}\n)\nload_dotenv()\nos.environ[\"GROQ_API_KEY\"] = os.getenv(\"GROQ_API\")\n# local_llm = 'llama3.1\n# llm = ChatOllama(model=local_llm)\nllm = ChatGroq(\n    model=\"llama-3.3-70b-versatile\",",
         "detail": "main",
         "documentation": {}
     },
@@ -610,7 +836,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "os.environ[\"GROQ_API_KEY\"] = os.getenv(\"GROQ_API\")\n# local_llm = 'llama3.1\n# llm = ChatOllama(model=local_llm)\nllm = ChatGroq(\n    model=\"llama-3.1-8b-instant\",\n    temperature=0,\n    max_tokens=None,\n    timeout=None,\n    max_retries=2,\n    # other params...",
+        "peekOfCode": "os.environ[\"GROQ_API_KEY\"] = os.getenv(\"GROQ_API\")\n# local_llm = 'llama3.1\n# llm = ChatOllama(model=local_llm)\nllm = ChatGroq(\n    model=\"llama-3.3-70b-versatile\",\n    temperature=0.1,\n    max_tokens=None,\n    timeout=None,\n    max_retries=2,\n    # other params...",
         "detail": "main",
         "documentation": {}
     },
@@ -619,7 +845,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "llm = ChatGroq(\n    model=\"llama-3.1-8b-instant\",\n    temperature=0,\n    max_tokens=None,\n    timeout=None,\n    max_retries=2,\n    # other params...\n)\n# Create prompt template\ntemplate = \"\"\"",
+        "peekOfCode": "llm = ChatGroq(\n    model=\"llama-3.3-70b-versatile\",\n    temperature=0.1,\n    max_tokens=None,\n    timeout=None,\n    max_retries=2,\n    # other params...\n)\n# Create prompt template\ntemplate = \"\"\"",
         "detail": "main",
         "documentation": {}
     },
@@ -628,7 +854,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "template = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your role is to answer the user's question based strictly on the provided context. If the context does not contain the answer, you should ask clarifying questions to gather more information.\nMake sure to:\n1. Use only the provided context to generate the answer.\n2. Be concise and direct.\n3. If the context is insufficient, ask relevant follow-up questions instead of speculating.\n4. Only answer from the context.\nContext:\n{context}\nQuestion: {question}",
+        "peekOfCode": "template = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your task is to answer the user's question strictly based on the provided context. If the context lacks sufficient information, ask focused clarifying questions to gather additional details.\nTo improve your responses, follow these steps:\nChain-of-Thought (COT): Break down complex queries into logical steps. Use tags like [Step 1], [Step 2], etc., to label each part of the reasoning process. This helps structure your thinking and ensure clarity. For example:\n[Step 1] Identify the key details in the context relevant to the question.\n[Step 2] Break down any assumptions or information gaps.\n[Step 3] Combine all pieces to form the final, well-reasoned response.\nReasoning: Demonstrate a clear logical connection between the context and your answer at each step. If information is missing or unclear, indicate the gap using tags like [Missing Information] and ask relevant follow-up questions to fill that gap.\nClarity and Precision: Provide direct, concise answers focused only on the context. Avoid including speculative or unrelated information.\nFollow-up Questions: If the context is insufficient, focus on asking specific, relevant questions. Label them as [Clarifying Question] to indicate they are needed to complete the response. For example:",
         "detail": "main",
         "documentation": {}
     },
@@ -700,7 +926,7 @@
         "kind": 5,
         "importPath": "improvedrag",
         "description": "improvedrag",
-        "peekOfCode": "llm = ChatGroq(\n    model=\"llama-3.1-70b-versatile\",\n    temperature=0,\n    max_tokens=None,\n    timeout=None,\n    max_retries=5\n)\n# Add contextual compression\ncompressor = LLMChainExtractor.from_llm(llm)\ncompression_retriever = ContextualCompressionRetriever(",
+        "peekOfCode": "llm = ChatGroq(\n    model=\"llama-3.3-70b-versatile\",\n    temperature=0.1,\n    max_tokens=None,\n    timeout=None,\n    max_retries=5\n)\n# Add contextual compression\ncompressor = LLMChainExtractor.from_llm(llm)\ncompression_retriever = ContextualCompressionRetriever(",
         "detail": "improvedrag",
         "documentation": {}
     },
@@ -709,7 +935,7 @@
         "kind": 5,
         "importPath": "improvedrag",
         "description": "improvedrag",
-        "peekOfCode": "compressor = LLMChainExtractor.from_llm(llm)\ncompression_retriever = ContextualCompressionRetriever(\n    base_retriever=retriever,\n    base_compressor=compressor\n)\n# Enhanced RAG-focused prompt template\ntemplate = \"\"\"\nأنت مساعد متخصص في الإجابة على الأسئلة باستخدام المعلومات المقدمة حصراً في السياق أدناه. يجب أن تعتمد إجاباتك فقط على المعلومات الموجودة في النص المسترجع.\nالقواعد الأساسية:\n1. استخدم فقط المعلومات الموجودة في السياق المقدم",
+        "peekOfCode": "compressor = LLMChainExtractor.from_llm(llm)\ncompression_retriever = ContextualCompressionRetriever(\n    base_retriever=retriever,\n    base_compressor=compressor\n)\n# Enhanced RAG-focused prompt template\ntemplate = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your task is to answer the user's question strictly based on the provided context. If the context lacks sufficient information, ask focused clarifying questions to gather additional details.\nTo improve your responses, follow these steps:\nChain-of-Thought (COT): Break down complex queries into logical steps. Use tags like [Step 1], [Step 2], etc., to label each part of the reasoning process. This helps structure your thinking and ensure clarity. For example:",
         "detail": "improvedrag",
         "documentation": {}
     },
@@ -718,7 +944,7 @@
         "kind": 5,
         "importPath": "improvedrag",
         "description": "improvedrag",
-        "peekOfCode": "compression_retriever = ContextualCompressionRetriever(\n    base_retriever=retriever,\n    base_compressor=compressor\n)\n# Enhanced RAG-focused prompt template\ntemplate = \"\"\"\nأنت مساعد متخصص في الإجابة على الأسئلة باستخدام المعلومات المقدمة حصراً في السياق أدناه. يجب أن تعتمد إجاباتك فقط على المعلومات الموجودة في النص المسترجع.\nالقواعد الأساسية:\n1. استخدم فقط المعلومات الموجودة في السياق المقدم\n2. إذا لم تجد المعلومات في السياق، قل بوضوح \"لا أستطيع الإجابة على هذا السؤال بناءً على السياق المتوفر\"",
+        "peekOfCode": "compression_retriever = ContextualCompressionRetriever(\n    base_retriever=retriever,\n    base_compressor=compressor\n)\n# Enhanced RAG-focused prompt template\ntemplate = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your task is to answer the user's question strictly based on the provided context. If the context lacks sufficient information, ask focused clarifying questions to gather additional details.\nTo improve your responses, follow these steps:\nChain-of-Thought (COT): Break down complex queries into logical steps. Use tags like [Step 1], [Step 2], etc., to label each part of the reasoning process. This helps structure your thinking and ensure clarity. For example:\n[Step 1] Identify the key details in the context relevant to the question.",
         "detail": "improvedrag",
         "documentation": {}
     },
@@ -727,7 +953,7 @@
         "kind": 5,
         "importPath": "improvedrag",
         "description": "improvedrag",
-        "peekOfCode": "template = \"\"\"\nأنت مساعد متخصص في الإجابة على الأسئلة باستخدام المعلومات المقدمة حصراً في السياق أدناه. يجب أن تعتمد إجاباتك فقط على المعلومات الموجودة في النص المسترجع.\nالقواعد الأساسية:\n1. استخدم فقط المعلومات الموجودة في السياق المقدم\n2. إذا لم تجد المعلومات في السياق، قل بوضوح \"لا أستطيع الإجابة على هذا السؤال بناءً على السياق المتوفر\"\n3. لا تستخدم معرفتك العامة أو معلومات خارجية\n4. لا تستنتج أو تخمن معلومات غير موجودة في السياق\n5. كن دقيقاً في اقتباس المعلومات من السياق\nالسياق المقدم:\n{context}",
+        "peekOfCode": "template = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your task is to answer the user's question strictly based on the provided context. If the context lacks sufficient information, ask focused clarifying questions to gather additional details.\nTo improve your responses, follow these steps:\nChain-of-Thought (COT): Break down complex queries into logical steps. Use tags like [Step 1], [Step 2], etc., to label each part of the reasoning process. This helps structure your thinking and ensure clarity. For example:\n[Step 1] Identify the key details in the context relevant to the question.\n[Step 2] Break down any assumptions or information gaps.\n[Step 3] Combine all pieces to form the final, well-reasoned response.\nReasoning: Demonstrate a clear logical connection between the context and your answer at each step. If information is missing or unclear, indicate the gap using tags like [Missing Information] and ask relevant follow-up questions to fill that gap.\nClarity and Precision: Provide direct, concise answers focused only on the context. Avoid including speculative or unrelated information.\nFollow-up Questions: If the context is insufficient, focus on asking specific, relevant questions. Label them as [Clarifying Question] to indicate they are needed to complete the response. For example:",
         "detail": "improvedrag",
         "documentation": {}
     },
@@ -750,66 +976,129 @@
         "documentation": {}
     },
     {
-        "label": "device",
-        "kind": 5,
+        "label": "load_and_chunk_documents",
+        "kind": 2,
         "importPath": "newindexer",
         "description": "newindexer",
-        "peekOfCode": "device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\n# Load documents from a PDF file\nloader = DirectoryLoader(\"Data\", glob=\"**/*.pdf\")\nprint(\"PDF files loaded\")\ndocuments = loader.load()\nprint(f\"Number of documents loaded: {len(documents)}\")\n# Create embeddings using multilingual-e5-large model\nembeddings = HuggingFaceEmbeddings(\n    model_name=\"intfloat/multilingual-e5-large\",\n    model_kwargs={'device': device},",
+        "peekOfCode": "def load_and_chunk_documents(data_dir=\"Data\", chunk_size=500, chunk_overlap=300):\n    \"\"\"Loads PDF documents, splits them into chunks, and returns the chunks.\"\"\"\n    print(\"Loading PDF documents...\")\n    # use glob **/*.pdf to get all pdf in data folder and subfolders \n    loader = DirectoryLoader(data_dir, glob=\"**/*.pdf\", loader_cls=PyPDFLoader)\n    documents = loader.load()\n    print(f\"Loaded {len(documents)} documents.\")\n    text_splitter = RecursiveCharacterTextSplitter(\n        chunk_size=chunk_size,\n        chunk_overlap=chunk_overlap,",
         "detail": "newindexer",
         "documentation": {}
     },
     {
-        "label": "loader",
-        "kind": 5,
+        "label": "create_vectorstore",
+        "kind": 2,
         "importPath": "newindexer",
         "description": "newindexer",
-        "peekOfCode": "loader = DirectoryLoader(\"Data\", glob=\"**/*.pdf\")\nprint(\"PDF files loaded\")\ndocuments = loader.load()\nprint(f\"Number of documents loaded: {len(documents)}\")\n# Create embeddings using multilingual-e5-large model\nembeddings = HuggingFaceEmbeddings(\n    model_name=\"intfloat/multilingual-e5-large\",\n    model_kwargs={'device': device},\n    encode_kwargs={'normalize_embeddings': True}\n)",
+        "peekOfCode": "def create_vectorstore(texts, model_name=\"BAAI/bge-large-en-v1.5\", persist_dir=\"./qdrant_mawared\", collection_name=\"mawared\"):\n    \"\"\"Creates a Qdrant vector store from text chunks.\"\"\"\n    print(\"Creating vector embeddings...\")\n    embeddings = HuggingFaceEmbeddings(model_name=model_name) # Changed to HuggingFaceEmbeddings\n    print(\"Creating vector store...\")\n    # Connect to Qdrant Client\n    client = QdrantClient(\n        url=os.getenv(\"QDRANT_URL\"), \n        api_key=os.getenv(\"QDRANT_API_KEY\"),\n        prefer_grpc=True",
         "detail": "newindexer",
         "documentation": {}
     },
     {
-        "label": "documents",
-        "kind": 5,
+        "label": "main",
+        "kind": 2,
         "importPath": "newindexer",
         "description": "newindexer",
-        "peekOfCode": "documents = loader.load()\nprint(f\"Number of documents loaded: {len(documents)}\")\n# Create embeddings using multilingual-e5-large model\nembeddings = HuggingFaceEmbeddings(\n    model_name=\"intfloat/multilingual-e5-large\",\n    model_kwargs={'device': device},\n    encode_kwargs={'normalize_embeddings': True}\n)\n# Create text splitter with Arabic-friendly settings\ntext_splitter = RecursiveCharacterTextSplitter(",
+        "peekOfCode": "def main():\n    texts = load_and_chunk_documents()\n    vectorstore = create_vectorstore(texts)\nif __name__ == \"__main__\":\n    main()\n    print(\"Done!\")",
         "detail": "newindexer",
+        "documentation": {}
+    },
+    {
+        "label": "ask_question",
+        "kind": 2,
+        "importPath": "newmain",
+        "description": "newmain",
+        "peekOfCode": "def ask_question(question):\n    print(\"Answer:\\t\", end=\" \", flush=True)\n    for chunk in rag_chain.stream(question):\n        print(chunk, end=\"\", flush=True)\n    print(\"\\n\")\n# Example usage\nif __name__ == \"__main__\":\n    while True:\n        user_question = input(\"\\n \\n \\n Ask a question (or type 'quit' to exit): \")\n        if user_question.lower() == 'quit':",
+        "detail": "newmain",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"GROQ_API_KEY\"]",
+        "kind": 5,
+        "importPath": "newmain",
+        "description": "newmain",
+        "peekOfCode": "os.environ[\"GROQ_API_KEY\"] = os.getenv(\"GROQ_API\")\n# HuggingFace Embeddings\nembeddings = HuggingFaceEmbeddings(model_name=\"BAAI/bge-large-en-v1.5\")\n# Qdrant Client Setup\nclient = QdrantClient(\n    url=os.getenv(\"QDRANT_URL\"),\n    api_key=os.getenv(\"QDRANT_API_KEY\"),\n    prefer_grpc=True\n)\ncollection_name = \"mawared\"",
+        "detail": "newmain",
         "documentation": {}
     },
     {
         "label": "embeddings",
         "kind": 5,
-        "importPath": "newindexer",
-        "description": "newindexer",
-        "peekOfCode": "embeddings = HuggingFaceEmbeddings(\n    model_name=\"intfloat/multilingual-e5-large\",\n    model_kwargs={'device': device},\n    encode_kwargs={'normalize_embeddings': True}\n)\n# Create text splitter with Arabic-friendly settings\ntext_splitter = RecursiveCharacterTextSplitter(\n    chunk_size=500,\n    chunk_overlap=50,\n    length_function=len,",
-        "detail": "newindexer",
+        "importPath": "newmain",
+        "description": "newmain",
+        "peekOfCode": "embeddings = HuggingFaceEmbeddings(model_name=\"BAAI/bge-large-en-v1.5\")\n# Qdrant Client Setup\nclient = QdrantClient(\n    url=os.getenv(\"QDRANT_URL\"),\n    api_key=os.getenv(\"QDRANT_API_KEY\"),\n    prefer_grpc=True\n)\ncollection_name = \"mawared\"\n# Try to create collection, handle if it already exists\ntry:",
+        "detail": "newmain",
         "documentation": {}
     },
     {
-        "label": "text_splitter",
+        "label": "client",
         "kind": 5,
-        "importPath": "newindexer",
-        "description": "newindexer",
-        "peekOfCode": "text_splitter = RecursiveCharacterTextSplitter(\n    chunk_size=500,\n    chunk_overlap=50,\n    length_function=len,\n    add_start_index=True,\n    # Separators prioritized for Arabic text\n    separators=[\"\\n\\n\", \"\\n\", \".\", \"!\", \"?\", \"،\", \";\", \",\", \" \", \"\"]\n)\n# Split documents into chunks\ntexts = text_splitter.split_documents(documents)",
-        "detail": "newindexer",
+        "importPath": "newmain",
+        "description": "newmain",
+        "peekOfCode": "client = QdrantClient(\n    url=os.getenv(\"QDRANT_URL\"),\n    api_key=os.getenv(\"QDRANT_API_KEY\"),\n    prefer_grpc=True\n)\ncollection_name = \"mawared\"\n# Try to create collection, handle if it already exists\ntry:\n    client.create_collection(\n        collection_name=collection_name,",
+        "detail": "newmain",
         "documentation": {}
     },
     {
-        "label": "texts",
+        "label": "collection_name",
         "kind": 5,
-        "importPath": "newindexer",
-        "description": "newindexer",
-        "peekOfCode": "texts = text_splitter.split_documents(documents)\n# Create vector store\nvectorstore = Chroma.from_documents(\n    documents=texts, \n    embedding=embeddings,\n    persist_directory=\"./db-mawared\"\n)\nprint(\"Vector store created successfully\")",
-        "detail": "newindexer",
+        "importPath": "newmain",
+        "description": "newmain",
+        "peekOfCode": "collection_name = \"mawared\"\n# Try to create collection, handle if it already exists\ntry:\n    client.create_collection(\n        collection_name=collection_name,\n        vectors_config=models.VectorParams(\n            size=768,  # GTE-large embedding size\n            distance=models.Distance.COSINE\n        ),\n    )",
+        "detail": "newmain",
         "documentation": {}
     },
     {
-        "label": "vectorstore",
+        "label": "db",
         "kind": 5,
-        "importPath": "newindexer",
-        "description": "newindexer",
-        "peekOfCode": "vectorstore = Chroma.from_documents(\n    documents=texts, \n    embedding=embeddings,\n    persist_directory=\"./db-mawared\"\n)\nprint(\"Vector store created successfully\")",
-        "detail": "newindexer",
+        "importPath": "newmain",
+        "description": "newmain",
+        "peekOfCode": "db = Qdrant(\n    client=client,\n    collection_name=collection_name,\n    embeddings=embeddings,\n)\n# Create retriever\nretriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs={\"k\": 5}\n)",
+        "detail": "newmain",
+        "documentation": {}
+    },
+    {
+        "label": "retriever",
+        "kind": 5,
+        "importPath": "newmain",
+        "description": "newmain",
+        "peekOfCode": "retriever = db.as_retriever(\n    search_type=\"similarity\",\n    search_kwargs={\"k\": 5}\n)\nllm = ChatGroq(\n    model=\"llama-3.3-70b-versatile\",\n    temperature=0.1,\n    max_tokens=None,\n    timeout=None,\n    max_retries=2,",
+        "detail": "newmain",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "newmain",
+        "description": "newmain",
+        "peekOfCode": "llm = ChatGroq(\n    model=\"llama-3.3-70b-versatile\",\n    temperature=0.1,\n    max_tokens=None,\n    timeout=None,\n    max_retries=2,\n    # other params...\n)\n# Create prompt template\ntemplate = \"\"\"",
+        "detail": "newmain",
+        "documentation": {}
+    },
+    {
+        "label": "template",
+        "kind": 5,
+        "importPath": "newmain",
+        "description": "newmain",
+        "peekOfCode": "template = \"\"\"\nYou are an expert assistant specializing in the Mawared HR System. Your task is to answer the user's question strictly based on the provided context. If the context lacks sufficient information, ask focused clarifying questions to gather additional details.\nTo improve your responses, follow these steps:\nChain-of-Thought (COT): Break down complex queries into logical steps. Use tags like [Step 1], [Step 2], etc., to label each part of the reasoning process. This helps structure your thinking and ensure clarity. For example:\n[Step 1] Identify the key details in the context relevant to the question.\n[Step 2] Break down any assumptions or information gaps.\n[Step 3] Combine all pieces to form the final, well-reasoned response.\nReasoning: Demonstrate a clear logical connection between the context and your answer at each step. If information is missing or unclear, indicate the gap using tags like [Missing Information] and ask relevant follow-up questions to fill that gap.\nClarity and Precision: Provide direct, concise answers focused only on the context. Avoid including speculative or unrelated information.\nFollow-up Questions: If the context is insufficient, focus on asking specific, relevant questions. Label them as [Clarifying Question] to indicate they are needed to complete the response. For example:",
+        "detail": "newmain",
+        "documentation": {}
+    },
+    {
+        "label": "prompt",
+        "kind": 5,
+        "importPath": "newmain",
+        "description": "newmain",
+        "peekOfCode": "prompt = ChatPromptTemplate.from_template(template)\n# Create the RAG chain using LCEL with prompt printing and streaming output\nrag_chain = (\n    {\"context\": retriever, \"question\": RunnablePassthrough()}\n    | prompt\n    | llm\n    | StrOutputParser()\n)\n# Function to ask questions\ndef ask_question(question):",
+        "detail": "newmain",
+        "documentation": {}
+    },
+    {
+        "label": "rag_chain",
+        "kind": 5,
+        "importPath": "newmain",
+        "description": "newmain",
+        "peekOfCode": "rag_chain = (\n    {\"context\": retriever, \"question\": RunnablePassthrough()}\n    | prompt\n    | llm\n    | StrOutputParser()\n)\n# Function to ask questions\ndef ask_question(question):\n    print(\"Answer:\\t\", end=\" \", flush=True)\n    for chunk in rag_chain.stream(question):",
+        "detail": "newmain",
         "documentation": {}
     }
 ]
