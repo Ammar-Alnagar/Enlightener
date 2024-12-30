@@ -25,7 +25,7 @@ client = QdrantClient(
     prefer_grpc=True
 )
 
-collection_name = "compunancy"
+collection_name = "mawared"
 
 # Try to create collection, handle if it already exists
 try:
