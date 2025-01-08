@@ -35,6 +35,7 @@ try:
             size=768,  # GTE-large embedding size
             distance=models.Distance.COSINE
         ),
+        
     )
     print(f"Created new collection: {collection_name}")
 except Exception as e:
