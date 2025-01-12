@@ -1303,7 +1303,7 @@
         "kind": 2,
         "importPath": "newindexer",
         "description": "newindexer",
-        "peekOfCode": "def load_and_chunk_documents(data_dir=\"data\", chunk_size=500, chunk_overlap=300):\n    \"\"\"Loads PDF documents, splits them into chunks, and returns the chunks.\"\"\"\n    print(\"Loading PDF documents...\")\n    # use glob **/*.pdf to get all pdf in data folder and subfolders \n    loader = DirectoryLoader(data_dir, glob=\"**/*.pdf\", loader_cls=PyPDFLoader)\n    documents = loader.load()\n    print(f\"Loaded {len(documents)} documents.\")\n    text_splitter = RecursiveCharacterTextSplitter(\n        chunk_size=chunk_size,\n        chunk_overlap=chunk_overlap,",
+        "peekOfCode": "def load_and_chunk_documents(data_dir=\"data\", chunk_size=400, chunk_overlap=150):\n    \"\"\"Loads PDF documents, splits them into chunks, and returns the chunks.\"\"\"\n    print(\"Loading PDF documents...\")\n    # use glob **/*.pdf to get all pdf in data folder and subfolders \n    loader = DirectoryLoader(data_dir, glob=\"**/*.pdf\", loader_cls=PyPDFLoader)\n    documents = loader.load()\n    print(f\"Loaded {len(documents)} documents.\")\n    text_splitter = RecursiveCharacterTextSplitter(\n        chunk_size=chunk_size,\n        chunk_overlap=chunk_overlap,",
         "detail": "newindexer",
         "documentation": {}
     },
@@ -1312,7 +1312,7 @@
         "kind": 2,
         "importPath": "newindexer",
         "description": "newindexer",
-        "peekOfCode": "def create_vectorstore(texts, model_name=\"BAAI/bge-large-en-v1.5\", persist_dir=\"./qdrant_mawared\", collection_name=\"mawared\"):\n    \"\"\"Creates a Qdrant vector store from text chunks.\"\"\"\n    print(\"Creating vector embeddings...\")\n    embeddings = HuggingFaceEmbeddings(model_name=model_name) # Changed to HuggingFaceEmbeddings\n    print(\"Creating vector store...\")\n    # Connect to Qdrant Client\n    client = QdrantClient(\n        url=os.getenv(\"QDRANT_URL\"), \n        api_key=os.getenv(\"QDRANT_API_KEY\"),\n        prefer_grpc=True",
+        "peekOfCode": "def create_vectorstore(texts, model_name=\"sentence-transformers/all-MiniLM-L6-v2\", persist_dir=\"./qdrant_mawared\", collection_name=\"mawared\"):\n    \"\"\"Creates a Qdrant vector store from text chunks.\"\"\"\n    print(\"Creating vector embeddings...\")\n    embeddings = HuggingFaceEmbeddings(model_name=model_name) # Changed to HuggingFaceEmbeddings\n    print(\"Creating vector store...\")\n    # Connect to Qdrant Client\n    client = QdrantClient(\n        url=os.getenv(\"QDRANT_URL\"), \n        api_key=os.getenv(\"QDRANT_API_KEY\"),\n        prefer_grpc=True",
         "detail": "newindexer",
         "documentation": {}
     },

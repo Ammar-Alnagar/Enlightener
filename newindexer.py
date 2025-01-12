@@ -11,7 +11,7 @@ from tqdm import tqdm  # for progress bars
 load_dotenv()
 
 
-def load_and_chunk_documents(data_dir="data", chunk_size=500, chunk_overlap=300):
+def load_and_chunk_documents(data_dir="data", chunk_size=400, chunk_overlap=150):
     """Loads PDF documents, splits them into chunks, and returns the chunks."""
     print("Loading PDF documents...")
     # use glob **/*.pdf to get all pdf in data folder and subfolders 
@@ -33,7 +33,7 @@ def load_and_chunk_documents(data_dir="data", chunk_size=500, chunk_overlap=300)
     print(f"Created {len(texts)} text chunks.")
     return texts
 
-def create_vectorstore(texts, model_name="BAAI/bge-large-en-v1.5", persist_dir="./qdrant_mawared", collection_name="mawared"):
+def create_vectorstore(texts, model_name="sentence-transformers/all-MiniLM-L6-v2", persist_dir="./qdrant_mawared", collection_name="mawared"):
     """Creates a Qdrant vector store from text chunks."""
     print("Creating vector embeddings...")
     embeddings = HuggingFaceEmbeddings(model_name=model_name) # Changed to HuggingFaceEmbeddings
@@ -48,7 +48,7 @@ def create_vectorstore(texts, model_name="BAAI/bge-large-en-v1.5", persist_dir="
     )
 
     # Get embedding dimension by embedding a test string
-    vector_size = 1024 #1536
+    vector_size = 384 #1536
 
     # Create collection if it doesn't exist
     collections = client.get_collections().collections
