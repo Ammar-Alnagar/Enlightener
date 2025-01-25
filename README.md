@@ -1,4 +1,4 @@
-# Enlightener 🌟
+ # Enlightener 🌟
 
 
 Welcome to Enlightener, the cutting-edge Retrieval-Augmented Generation (RAG) system that transforms how queries are answered by combining the prowess of SSM models (Mamba) with the sophisticated GGUF Mamba models. Dive into a world where your questions meet their perfect answers with the power of advanced NLP technology.
