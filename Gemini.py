@@ -11,6 +11,7 @@ from langchain.schema.output_parser import StrOutputParser
 
 
 
+
 # # Create embeddingsclear
 embeddings = OllamaEmbeddings(model="nomic-embed-text", show_progress=False)
 # embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
