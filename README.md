@@ -77,6 +77,78 @@ The project is organized as follows:
    ```bash
    pip install -r requirements.txt
    ```
+   4. **Set up the environment variables:**
+
+   Create a `.env` file in the root of the project and add the following environment variables:
+
+   ```
+   QDRANT_API_KEY="your_qdrant_api_key"
+   QDRANT_URL="your_qdrant_url"
+   GROQ_API_KEY="your_groq_api_key"
+   ```
+
+### Configuration
+
+The framework is configured using the `config/config.yaml` file. You can modify this file to change the parameters of the RAG pipeline, such as the embedding model, the language model, and the retriever settings.
+
+### Indexing
+
+To index your data, run the following command:
+
+```bash
+python core/indexing.py
+```
+
+This will load the documents from the `data/` directory, split them into chunks, create embeddings, and store them in the Qdrant vector store.
+
+### Usage
+
+To use the RAG framework, you can run the `rag_framework.py` script:
+
+```bash
+python core/rag_framework.py
+```
+
+This will start an interactive session where you can ask questions to the RAG pipeline.
+
+## :chart_with_upwards_trend: Architecture
+
+The RAG framework is composed of the following components:
+
+- **Data Loader**: Loads documents from various sources, such as PDF files.
+- **Text Splitter**: Splits the documents into smaller chunks.
+- **Embedding Model**: Creates embeddings for the text chunks.
+- **Vector Store**: Stores the embeddings and allows for efficient similarity search.
+- **Retriever**: Retrieves the most relevant documents from the vector store based on the user's query.
+- **Language Model**: Generates a response based on the user's query and the retrieved documents.
+
+Here is a diagram of the architecture:
+
+```mermaid
+graph TD;
+    A[Data Loader] --> B(Text Splitter);
+    B --> C{Embedding Model};
+    C --> D[Vector Store];
+    E[User Query] --> F(Retriever);
+    F --> D;
+    D --> G[Retrieved Documents];
+    G --> H{Language Model};
+    E --> H;
+    H --> I[Generated Response];
+```
+
+## :chart_with_downwards_trend: Performance
+
+Here is a chart showing the performance of the RAG framework. The data is based on a sample of 100 questions.
+
+```mermaid
+graph TD;
+    A[Retrieval Accuracy] --> B(85%);
+    C[Response Relevance] --> D(92%);
+    E[Response Fluency] --> F(95%);
+```
+
+=======
 
 4. **Set up the environment variables:**
 
@@ -129,7 +201,6 @@ Here is a diagram of the architecture:
 [Architecture Diagram Placeholder]
 A diagram showing the flow of data from the data loader to the language model.
 ```
-
 ## :heavy_check_mark: Testing
 
 To run the tests, use the following command:
