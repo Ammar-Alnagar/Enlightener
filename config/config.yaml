@@ -1,0 +1,42 @@
+# Configuration for the RAG framework
+
+# API keys
+# It is recommended to use environment variables for API keys
+# For example: QDRANT_API_KEY: ${QDRANT_API_KEY}
+qdrant_api_key: "your_qdrant_api_key"
+groq_api_key: "your_groq_api_key"
+google_api_key: "your_google_api_key"
+mistral_api_key: "your_mistral_api_key"
+
+# Qdrant configuration
+qdrant_url: "your_qdrant_url"
+qdrant_collection_name: "mawared"
+
+# Embedding model
+embedding_model: "BAAI/bge-large-en-v1.5"
+
+# Language model
+llm_model: "llama-3.3-70b-versatile"
+temperature: 0.1
+max_tokens: null
+timeout: null
+max_retries: 2
+
+# Data paths
+data_dir: "data2"
+
+# Indexing configuration
+chunk_size: 400
+chunk_overlap: 150
+vector_size: 768 # BAAI/bge-large-en-v1.5 embedding size
+distance_metric: "Cosine"
+
+# Retriever configuration
+search_type: "similarity"
+search_kwargs:
+  k: 5
+mmr_fetch_k: 8
+mmr_lambda_mult: 0.7
+
+# Contextual compression
+use_contextual_compression: true
